@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { Menu1Component } from './menu1/menu1.component';
+import { VoirAdoptionComponent } from './voir-adoption/voir-adoption.component';
+import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-    Menu1Component
+    Menu1Component,
+    VoirAdoptionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
