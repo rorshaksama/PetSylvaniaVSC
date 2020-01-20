@@ -10,4 +10,3 @@ describe('MyserviceService', () => {
     expect(service).toBeTruthy();
   });
 });
-qg
