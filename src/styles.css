@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+.maj{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.perso{
+    margin-left: 50px;
+    text-shadow: 5px 5px 5px rgb(255, 130, 130);
+}
+
+.decal{
+    margin-left: 70px;
+}
+
+.centerT{
+    text-align: center;
+}
+
+.ls{
+    letter-spacing: 3px;
+}
+.mypol{
+    font-family: Cambria;
+}
+
+.fl{
+    float: left;
+    width: 46%;
+}
+
+.ml{
+    margin-left: 55%;
+}
+
+.gTitre{
+    font-size: 28px;
+    font-family: Roboto;
+    color: #36C;
+}
+
+.titre{
+    color: darkgray;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.colorWhite{
+    color: white;
+}
+
+.myFormLog{
+    margin: auto;
+    width: 40%;
+}
+
+.pmsg{
+    font-family: Cambria;
+    color: steelblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.zone51{
+    margin: auto !important;
+    width: 51% !important;
+    text-align: center !important;
+    color: goldenrod !important;
+}
+
+.pmsgr{
+    font-family: Cambria;
+    color: tomato;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.pmsgg{
+    font-family: Cambria;
+    color: greenyellow;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.myCardStyle{
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30)  !important;
+    width: 20rem; height: 24rem;
+}
+
+.myCardStyleHeader{
+    background-color:  green !important;
+    color: white ! important;
+}
+
+.btn-perso{
+    background-color:  green !important;
+    color: white ! important;
+}
+
+.my-bg-success{
+    background-color:  #99ff99 !important;
+    color: red !important;
+}
+
+.white-perso{color: white !important}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.decoButton{
+    position: fixed !important;
+    top: 6px !important;
+    right: 6px !important;
+    margin-right: 2px !important;
+}
