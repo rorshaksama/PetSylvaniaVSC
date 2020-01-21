@@ -9,6 +9,7 @@ import { VoirAdoptionComponent } from './voir-adoption/voir-adoption.component';
 import { AlerteComponent } from './alerte/alerte.component';
 import { HttpClientModule } from '@angular/common/http';
 import { from } from 'rxjs';
+import { FormulaireAlerteComponent } from './formulaire-alerte/formulaire-alerte.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { from } from 'rxjs';
     ConnexionComponent,
     Menu1Component,
     VoirAdoptionComponent,
-    AlerteComponent
+    AlerteComponent,
+    FormulaireAlerteComponent
   ],
   imports: [
     BrowserModule,

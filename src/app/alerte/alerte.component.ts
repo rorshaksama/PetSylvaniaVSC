@@ -34,8 +34,10 @@ export class AlerteComponent implements OnInit {
   }
 
   addAlerte() {
+    
+    
     this.http.post(this.myservice.lienHttp + 'alerte', this.alerte).subscribe(data => {
-
+      this.ngOnInit();
     })
   }
 
