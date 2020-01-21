@@ -21,13 +21,18 @@
             </li>
         </ul>
     </div>
-    <div class="col-sm-2">
-        <h3 style="color: red; text-align: center;">Alertes en cours</h3>
+    <div class="col-sm-2 card">
+        <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours</h3>
         <div *ngFor="let a of alertes">
-            {{a.animal.type.type}} <br>
-            {{a.message}} <br>
-            {{a.dateDisparition}} <br><br>
+            <div class="card-header">
+                <p>{{a.animal.type.type}} perdu</p>
+                <div class="card-body">
+                    {{a.message}} <br>
+                    <p>disparu le {{a.dateDisparition}}</p> <br><br>
+                </div>
+            </div>
+
         </div>
-        
+
     </div>
 </div>
