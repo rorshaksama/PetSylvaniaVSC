@@ -28,11 +28,16 @@
                 <p>{{a.animal.type.type}} perdu</p>
                 <div class="card-body">
                     {{a.message}} <br>
-                    <p>disparu le {{a.dateDisparition}}</p> <br><br>
+                    <p>disparu le {{a.dateDisparition}}</p>
+                    <button (click)="deleteAlerte(a.id)">
+                        Effacer
+                    </button>
+                    <br><br>
                 </div>
             </div>
 
         </div>
 
     </div>
+
 </div>

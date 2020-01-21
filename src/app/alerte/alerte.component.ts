@@ -17,7 +17,16 @@ export class AlerteComponent implements OnInit {
   ngOnInit() {
     this.http.get(this.myservice.lienHttp + 'alerte').subscribe(a =>{
       this.alertes = a;
-    })
+    });
+  }
+
+  deleteAlerte(id) {
+    this.http.delete(this.myservice.lienHttp + 'alerte/' + id).subscribe(data => {
+      // console.log(data);
+      this.ngOnInit();
+    }, err => {
+      console.log(err);
+    });
   }
 
 

@@ -15,8 +15,7 @@ import { from } from 'rxjs';
     AppComponent,
     ConnexionComponent,
     Menu1Component,
-    VoirAdoptionComponent,
-    AlerteComponent
+    VoirAdoptionComponent
   ],
   imports: [
     BrowserModule,
