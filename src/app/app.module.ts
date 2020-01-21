@@ -30,7 +30,7 @@ import {MatInputModule} from '@angular/material/input';
     FormulaireAlerteComponent,
     PopupComponent
   ],
-  entryComponents: [PopupComponent],
+  entryComponents: [PopupComponent, FormulaireAlerteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,13 +1,16 @@
 <div class="card">
-    <form><br>
+    <form (ngSubmit)="createAlerte()">
+        <br>
         <div class="form-group">
-            <input type="text" name="login" placeholder="Veuillez entrer un login" class="form-control text-center">
+            <input type="text" name="login" [(ngModel)]="u.login" placeholder="Veuillez entrer un login"
+                class="form-control text-center">
         </div>
         <div class="form-group">
-            <input type="text" name="message" placeholder="Veuillez décrire votre animal et sa disparition." class="form-control text-center">
+            <input type="text" id="message" name="message" [(ngModel)]="alerte.message" 
+                placeholder="Veuillez décrire votre animal et sa disparition." class="form-control text-center">
         </div>
         <div class="form-group">
-            <input type="date" name="dateDisparition" placeholder="" class="form-control text-center">
+            <input type="date" id="date" name="dateDisparition" [(ngModel)]="alerte.dateDisparition"  placeholder="" class="form-control text-center">
         </div>
         <button type="submit" class="btn btn-primary btn-block">Valider</button>
     </form>

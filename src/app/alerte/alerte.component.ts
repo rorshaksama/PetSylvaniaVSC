@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { MyserviceService } from '../myservice.service';
 import { HttpClient } from '@angular/common/http';
 import { Alerte } from '../model/alerte';
+import { MatDialog } from '@angular/material/dialog';
+import { FormulaireAlerteComponent } from '../formulaire-alerte/formulaire-alerte.component';
 
 @Component({
   selector: 'app-alerte',
@@ -16,7 +18,7 @@ export class AlerteComponent implements OnInit {
   alerte: Alerte = new Alerte();
   al;
 
-  constructor(private route: Router, public myservice: MyserviceService, private http: HttpClient) { }
+  constructor(private route: Router, public myservice: MyserviceService, private http: HttpClient, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.http.get(this.myservice.lienHttp + 'alerte').subscribe(a => {
@@ -25,7 +27,7 @@ export class AlerteComponent implements OnInit {
   }
 
   deleteAlerte(id) {
-    this.http.delete(this.myservice.lienHttp + 'alerte' + id).subscribe(data => {
+    this.http.delete(this.myservice.lienHttp + 'alerte/' + id).subscribe(data => {
       // console.log(data);
       this.ngOnInit();
     }, err => {
@@ -34,11 +36,19 @@ export class AlerteComponent implements OnInit {
   }
 
   addAlerte() {
-    
-    
-    this.http.post(this.myservice.lienHttp + 'alerte', this.alerte).subscribe(data => {
+    const mydial = this.dialog.open(FormulaireAlerteComponent);
+    mydial.afterClosed().subscribe(result =>{
       this.ngOnInit();
-    })
+      
+      /*this.alerte.user.login = result.login;
+      this.alerte.message = result.message;
+      this.alerte.dateDisparition = result.dateDisparition;*/
+    });
+    
+   /* this.http.post(this.myservice.lienHttp + 'createAlerte', this.alerte).subscribe(data => {
+      this.ngOnInit();
+    });*/
   }
 
 }
+
