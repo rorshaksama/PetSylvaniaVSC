@@ -62,15 +62,10 @@ export class VoirAdoptionComponent implements OnInit {
 
   onTypeSelect(item: any) {
 
-    if (item.item_id == 1) { this.typeChien = true; }
-    if (item.item_id == 2) { this.typeChat = true; }
-    if (item.item_id == 3) { this.typeOiseau = true; }
-    if (item.item_id == 4) { this.typeRongeur = true; }
-    if (item.item_id == 5) { this.typeLapin = true; }
-
-
+    if (item.item_id === 1) { this.typeChien = true; }
+    if (item.item_id === 2) { this.typeChat = true; }
+    if (item.item_id === 3) { this.typeOiseau = true; }
+    if (item.item_id === 4) { this.typeRongeur = true; }
+    if (item.item_id === 5) { this.typeLapin = true; }
   }
-
-
-
 }
