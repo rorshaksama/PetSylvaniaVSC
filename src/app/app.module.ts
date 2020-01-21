@@ -20,7 +20,8 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AlerteComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
