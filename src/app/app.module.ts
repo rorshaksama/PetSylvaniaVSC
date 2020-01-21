@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { Menu1Component } from './menu1/menu1.component';
 import { VoirAdoptionComponent } from './voir-adoption/voir-adoption.component';
+import { FormulaireAlerteComponent } from './formulaire-alerte/formulaire-alerte.component';
 import { AlerteComponent } from './alerte/alerte.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
@@ -15,7 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormulaireAlerteComponent } from './formulaire-alerte/formulaire-alerte.component';
+
 
 @NgModule({
   declarations: [
