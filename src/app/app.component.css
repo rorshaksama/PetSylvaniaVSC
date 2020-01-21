@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+#titre,p{
+    text-align: center;
+}
+.maj{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    ;
+}
+.perso{
+    margin-left: 50px;
+    text-shadow: 5px 5px 5px rgb(70, 130, 170);
+}
+.decal{
+    margin-left: 10;
+}
+.ls{
+    letter-spacing: 10px;
+}
+.mypol{
+    font-family: Cambria;
+}
+.fl{
+    float: left;
+    width: 47%;
+
+}
+.ml{
+    margin-left: 50%;
+}
+.myFormLog{
+    margin: auto;
+    width: 40%;
+}
+.pmsg{
+    font-family: Cambria;
+    color:red;
+    letter-spacing: 2px;
+    
+}
+.zone51{
+    margin: auto !important;
+    width: 51%!important;
+    text-align: center !important;
+    color: goldenrod !important;
+}
+
+.myFormLog{
+    margin:auto;
+    width:40%;
+    
+}
+.myCardStyle{
+    box-shadow:0 19px 38px rgba(0,0,0,0.30) !important
+}
+
+.mycardStyleheader{
+    background-color: #048b9a !important;
+    color:white !important;
+    }
+    
+.titre{
+    color: grey;
+    letter-spacing: 3px ;
+    font-family: Roboto;
+    text-align: center;
+    font-size:30px;
+
+
+}
+.gtitre{
+    font-size:50px;
+    font-family: Roboto;
+    color: #3366cc;
+}
+.titre2{
+    color:#048b9a;
+    letter-spacing: 3px ;
+    font-family: Roboto;
+    text-align: center;
+}
+couleur{
+  color:#048b9a ;
+}
+
+
+/* Made with love by Mutiullah Samim*/
+
+
+
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
