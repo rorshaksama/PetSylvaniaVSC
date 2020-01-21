@@ -22,10 +22,12 @@
         </ul>
     </div>
     <div class="col-sm-2 card">
-        <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours</h3>
+        <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours 
+            <button (click)="addAlerte()">+</button>
+        </h3>
         <div *ngFor="let a of alertes">
             <div class="card-header">
-                <p>{{a.animal.type.type}} perdu</p>
+                <p>{{a.user.login}} a perdu </p>
                 <div class="card-body">
                     {{a.message}} <br>
                     <p>disparu le {{a.dateDisparition}}</p><br>
