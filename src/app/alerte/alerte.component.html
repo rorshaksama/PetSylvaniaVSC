@@ -1,43 +1,18 @@
-<div class="row">
-    <div class="col-sm-10">
-        <ul class="nav nav-tabs">
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="connexion">CONNEXION</a>
-            </li>
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="adoption">ADOPTER</a>
-            </li>
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="garde">GARDE</a>
-            </li>
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="fiche">FICHES</a>
-            </li>
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="forum">FORUM</a>
-            </li>
-            <li class="nav-item col-sm-2" style="text-align: center;">
-                <a class="nav-link" routerLink="reseau">RESEAU</a>
-            </li>
-        </ul>
-    </div>
-    <div class="col-sm-2 card">
-        <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours 
-            <button (click)="addAlerte()">+</button>
-        </h3>
-        <div *ngFor="let a of alertes">
-            <div class="card-header">
-                <p>{{a.user.login}} a perdu </p>
-                <div class="card-body">
-                    {{a.message}} <br>
-                    <p>disparu le {{a.dateDisparition}}</p><br>
-                    <button (click)="deleteAlerte(a.id)">
-                        Effacer
-                    </button>
-                    <br><br>
-                </div>
+<div class="col-sm-2 card">
+    <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours
+        <button (click)="addAlerte()">+</button>
+    </h3>
+    <div *ngFor="let a of alertes">
+        <div class="card-header">
+            <p>{{a.user.login}} a perdu </p>
+            <div class="card-body">
+                {{a.message}} <br>
+                <p>disparu le {{a.dateDisparition}}</p><br>
+                <button (click)="deleteAlerte(a.id)">
+                    Effacer
+                </button>
+                <br><br>
             </div>
-
         </div>
 
     </div>
