@@ -21,8 +21,7 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    AlerteComponent
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
