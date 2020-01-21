@@ -16,7 +16,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { PopupComponent } from './popup/popup.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     Menu1Component,
     VoirAdoptionComponent,
     AlerteComponent,
-    FormulaireAlerteComponent
+    FormulaireAlerteComponent,
+    PopupComponent
   ],
+  entryComponents: [PopupComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -37,7 +41,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatGridListModule,
     NgMultiSelectDropDownModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatInputModule
    
   ],
   providers: [],
