@@ -26,18 +26,18 @@ export class VoirAdoptionComponent implements OnInit {
   selectedType = [];
 
 
-  constructor(private http: HttpClient, private route: Router, public myService: MyserviceService, private dialog: MatDialog ) { }
+  constructor(private http: HttpClient, private route: Router, public myService: MyserviceService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.http.get(this.myService.lienHttp + 'adoption').subscribe(ad => {
       this.adoptions = ad;
 
-    /*  this.adoptions.forEach(element => {
-        console.log(element);
-        if (element.animal.type.type === 'Chien') {
-          console.log('chien trouvé');
-        }
-      });*/
+      /*  this.adoptions.forEach(element => {
+          console.log(element);
+          if (element.animal.type.type === 'Chien') {
+            console.log('chien trouvé');
+          }
+        });*/
 
       this.dropdownType = [
         { item_id: 1, item_text: 'Chien' },
@@ -65,9 +65,6 @@ export class VoirAdoptionComponent implements OnInit {
         allowSearchFilter: false
       }
     });
-
-
-
   }
 
   onTypeSelect(item: any) {
@@ -85,42 +82,45 @@ export class VoirAdoptionComponent implements OnInit {
     if (item.item_id === 4) { this.typeRongeur = false; }
     if (item.item_id === 5) { this.typeLapin = false; }
   }
-
   test(ad) {
 
-    if (ad.animal.type === 'Chien') {
-      console.log('vrai chien');
-    } else {
-      console.log('fau chien');
-    }
-
-    console.log('********************************** debut test *******************************************');
-    console.log('typeChien ', this.typeChien);
-    console.log('ad Type ', ad.animal.type);
-    console.log('is chien ? ', this.TuEsUnChien(ad));
 
     if (this.TuEsUnChien(ad)) { return true; }
     if (this.tuEsUnChat(ad)) { return true; }
+    if (this.tuEsUnOiseau(ad)) { return true; }
+    if (this.tuEsUnRongeur(ad)) { return true; }
+    if (this.tuEsUnLapin(ad)) { return true; }
 
     return false;
   }
-
-
   TuEsUnChien(ad) {
     if (this.typeChien && ad.animal.type.type === 'Chien') {
-      console.log('afficher chien');
       return true;
     }
   }
 
   tuEsUnChat(ad) {
     if (this.typeChat && ad.animal.type.type === 'Chat') {
-      console.log('afficher chien');
+      return true;
+    }
+  }
+  tuEsUnOiseau(ad) {
+    if (this.typeOiseau && ad.animal.type.type === 'Oiseau') {
+      return true;
+    }
+  }
+  tuEsUnRongeur(ad) {
+    if (this.typeRongeur && ad.animal.type.type === 'Rongeur') {
+      return true;
+    }
+  }
+  tuEsUnLapin(ad) {
+    if (this.typeLapin && ad.animal.type.type === 'Lapin') {
       return true;
     }
   }
   callMyPopop() {
     const mydial = this.dialog.open(PopupComponent);
   }
-  
+
 }

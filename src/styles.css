@@ -5,9 +5,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-grid-tile {
-    background: white;
-    
-    
+    background: white;      
   }
 
 .example-card {
@@ -27,6 +25,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-left:20px;
  }
 
+ .buttonStyle{
+  border-color:rgb(100, 132, 139);
+  background:  rgb(100, 132, 139);
+}
+
  .titre{
     color: rgb(123, 163, 173);
     letter-spacing: 3px;
@@ -34,3 +37,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

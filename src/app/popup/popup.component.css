@@ -8,8 +8,9 @@
   .example-full-width {
     width: 100%;
   }
-.MyPopup{
 
+  .MyPopup{
+   color: rgb(100, 132, 139);
+  }
 
-
-}
+  

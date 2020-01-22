@@ -27,7 +27,7 @@ export class PopupComponent implements OnInit {
   }
   
  addAdoption(){
-  this.http.post(this.myservice.lienHttp + 'addAdoption',this.add).subscribe(data=>{
+  this.http.post(this.myservice.lienHttp + 'createAdoption',this.add).subscribe(data => { 
   this.dialogRef.close();
 
   })
