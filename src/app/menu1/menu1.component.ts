@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AlerteComponent } from '../alerte/alerte.component';
+import { ConnexionComponent } from '../connexion/connexion.component';
 @Component({
   selector: 'app-menu1',
   templateUrl: './menu1.component.html',
@@ -24,6 +25,10 @@ visible = false;
   callMyPopop() {
     const mydial = this.dialog.open(AlerteComponent);
   }
+  callMyCon() {
+    const mydial = this.dialog.open(ConnexionComponent);
+  }
+
 
 
 }

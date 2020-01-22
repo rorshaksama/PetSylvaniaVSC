@@ -9,16 +9,17 @@ import { VoirAdoptionComponent } from './voir-adoption/voir-adoption.component';
 import { FormulaireAlerteComponent } from './formulaire-alerte/formulaire-alerte.component';
 import { AlerteComponent } from './alerte/alerte.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { from } from 'rxjs';
-import {MatButtonModule} from '@angular/material/button';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PopupComponent } from './popup/popup.component';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import {MatInputModule} from '@angular/material/input';
     FormulaireAlerteComponent,
     PopupComponent
   ],
-  entryComponents: [PopupComponent, FormulaireAlerteComponent,AlerteComponent],
+  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -43,8 +44,9 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatInputModule
-   
+    MatInputModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
