@@ -31,7 +31,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormulaireAlerteComponent,
     PopupComponent
   ],
-  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent],
+  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
