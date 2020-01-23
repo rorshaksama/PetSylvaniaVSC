@@ -9,6 +9,7 @@ export class MyserviceService {
 
   lienHttp = 'http://localhost:8099/';
   connect = false;
+  msgIfNotConnect;
 
   constructor() { }
 

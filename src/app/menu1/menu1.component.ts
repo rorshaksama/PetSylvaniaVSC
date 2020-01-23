@@ -8,7 +8,7 @@ import { ConnexionComponent } from '../connexion/connexion.component';
   styleUrls: ['./menu1.component.css']
 })
 export class Menu1Component implements OnInit {
-visible = false;
+  visible = false;
   constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
@@ -27,8 +27,15 @@ visible = false;
   }
   callMyCon() {
     const mydial = this.dialog.open(ConnexionComponent);
+
+    mydial.afterClosed().subscribe(result => {
+      this.ngOnInit();
+    });
   }
-
-
-
 }
+
+
+
+
+
+
