@@ -6,6 +6,7 @@ import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.componen
 import { InscriptionComponent } from './inscription/inscription.component';
 import { GarderComponent } from './garder/garder.component';
 import { FairegarderComponent } from './fairegarder/fairegarder.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -15,7 +16,9 @@ const routes: Routes = [
   { path: 'garde/garder', component: GarderComponent },
   { path: 'bienvenue', component: PageBienvenueComponent },
   { path: 'garde/fairegarder', component: FairegarderComponent },
-  { path: '', redirectTo: 'bienvenue', pathMatch: 'full' }
+  { path: '', redirectTo: 'bienvenue', pathMatch: 'full' },
+  { path: 'profile', component: ProfileComponent }
+
 ];
 
 

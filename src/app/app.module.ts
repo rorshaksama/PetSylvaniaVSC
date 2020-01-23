@@ -27,6 +27,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { Menu2Component } from './menu2/menu2.component';
 import { MenugardeComponent } from './menugarde/menugarde.component';
 import { FairegarderComponent } from './fairegarder/fairegarder.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -45,7 +46,8 @@ import { FairegarderComponent } from './fairegarder/fairegarder.component';
     InscriptionComponent,
     Menu2Component,
     MenugardeComponent,
-    FairegarderComponent
+    FairegarderComponent,
+    ProfileComponent
   ],
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent],
   imports: [
