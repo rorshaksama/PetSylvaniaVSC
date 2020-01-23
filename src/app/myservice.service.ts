@@ -30,6 +30,12 @@ export class MyserviceService {
     }
     return this.userConnecte;
   }
-
-  
+  deconnexion() {
+    localStorage.clear();
+    this.connect = false;
+    this.mConnecte = true;
+    console.log('A++++');
+    console.log('connect:   ' + this.connect);
+    console.log('mConnecte:   ' + this.mConnecte);
+  }
 }

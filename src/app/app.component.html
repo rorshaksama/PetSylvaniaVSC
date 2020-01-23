@@ -1,5 +1,7 @@
 
 <app-menu1 *ngIf="myservice.mConnecte" ></app-menu1>    <!-- -->
 <app-menu2 *ngIf="myservice.connect"></app-menu2>
-<button mat-fab color="warn" (click)="deconnexion()" ><mat-icon>power_settings_new</mat-icon></button>
+
+
+ <!-- <button *ngIf="myservice.connect" mat-fab color="warn" (click)="deconnexion()" ><mat-icon>power_settings_new</mat-icon></button>-->
 <router-outlet></router-outlet>
