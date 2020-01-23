@@ -15,11 +15,11 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 export class VoirAdoptionComponent implements OnInit {
 
   adoptions;
-  typeChien;
-  typeChat;
-  typeOiseau;
-  typeRongeur;
-  typeLapin;
+  typeChien = false;
+  typeChat = false;
+  typeOiseau = false;
+  typeRongeur = false;
+  typeLapin = false;
 
   dropdownSettings = {};
   dropdownType = [];
@@ -47,13 +47,7 @@ export class VoirAdoptionComponent implements OnInit {
         { item_id: 5, item_text: 'Lapin' }
       ];
 
-      this.selectedType = [
-        { item_id: 1, item_text: 'Chien' },
-        { item_id: 2, item_text: 'Chat' },
-        { item_id: 3, item_text: 'Oiseau' },
-        { item_id: 4, item_text: 'Rongeur' },
-        { item_id: 5, item_text: 'Lapin' }
-      ];
+
 
       this.dropdownSettings = {
         singleSelection: false,
@@ -62,11 +56,28 @@ export class VoirAdoptionComponent implements OnInit {
         selectAllText: 'Select All',
         unSelectAllText: 'UnSelect All',
         itemsShowLimit: 10,
-        allowSearchFilter: false
+        allowSearchFilter: true
+
       }
+      this.onSelectAllType();
     });
   }
 
+  onSelectAllType() {
+    this.typeChien = true;
+    this.typeChat = true;
+    this.typeRongeur = true;
+    this.typeLapin = true;
+    this.typeOiseau = true;
+  }
+
+  onDeSelectAllType() {
+    this.typeChien = false;
+    this.typeChat = false;
+    this.typeRongeur = false;
+    this.typeLapin = false;
+    this.typeOiseau = false;
+  }
   onTypeSelect(item: any) {
     if (item.item_id === 1) { this.typeChien = true; console.log('chien'); }
     if (item.item_id === 2) { this.typeChat = true; }

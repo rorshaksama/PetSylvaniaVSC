@@ -20,6 +20,7 @@ import { PopupComponent } from './popup/popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { GardeComponent } from './garde/garde.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatIconModule } from '@angular/material/icon';
     VoirAdoptionComponent,
     AlerteComponent,
     FormulaireAlerteComponent,
-    PopupComponent
+    PopupComponent,
+    GardeComponent
   ],
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent],
   imports: [
