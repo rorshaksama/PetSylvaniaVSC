@@ -9,6 +9,8 @@ export class MyserviceService {
 
   lienHttp = 'http://localhost:8099/';
   connect = false;
+  mConnecte = true;
+
   msgIfNotConnect;
 
   constructor() { }
@@ -21,7 +23,13 @@ export class MyserviceService {
     this.userConnecte = u;
     if (this.userConnecte != null) {
       this.connect = true;
+      this.mConnecte = false;
+    } else {
+      this.connect = false;
+      this.mConnecte = true;
     }
     return this.userConnecte;
   }
+
+  
 }
