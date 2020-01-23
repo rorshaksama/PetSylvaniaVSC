@@ -19,8 +19,8 @@ export class ConnexionComponent implements OnInit {
   infoConnection;
 
   // tslint:disable-next-line: max-line-length
-  constructor(private http: HttpClient, private route: Router, public myservice: MyserviceService, private dialogref: MatDialogRef<ConnexionComponent>, private dialog: MatDialog) {
-    this.u = myservice.recupUserConnectLocalStorage();
+  constructor(private http: HttpClient, private route: Router, public myservice: MyserviceService, public dialogref: MatDialogRef<ConnexionComponent>, public dialog: MatDialog) {
+
   }
 
   ngOnInit() {
@@ -38,6 +38,12 @@ export class ConnexionComponent implements OnInit {
     this.http.post(this.myservice.lienHttp + 'connexion', this.user).subscribe(data => {
       this.verifUser(data);
       this.dialogref.close();
+      console.log(this.user.login);
+      this.u = this.myservice.recupUserConnectLocalStorage();
+      console.log('connect:   ' + this.myservice.connect);
+      console.log('mConnecte:   ' + this.myservice.mConnecte);
+
+
     });
   }
   verifUser(data) {
@@ -47,7 +53,7 @@ export class ConnexionComponent implements OnInit {
       console.log('ok');
       this.myservice.userConnecte = data;
       localStorage.setItem('UserConnectStorage', JSON.stringify(data)); // MISE EN MEMOIRE DES INFOS
-      this.route.navigate(['bienvenue']);   // A CHANGER SI ON VEUT LE GUIDER VERS AUTRE PART
+      // this.route.navigate(['menu2']);   // A CHANGER SI ON VEUT LE GUIDER VERS AUTRE PART
 
 
     } else {
