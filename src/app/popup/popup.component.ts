@@ -22,14 +22,13 @@ export class PopupComponent implements OnInit {
   constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupComponent>) { }
 
   ngOnInit() {
-    this.add.user = this.u;
+    this.add.animal.user = this.u;
     this.add.animal = this.a;
   }
   
  addAdoption(){
-  this.http.post(this.myservice.lienHttp + 'createAdoption',this.add).subscribe(data => { 
+  this.http.post(this.myservice.lienHttp + 'createAdoption', this.add).subscribe(data => { 
   this.dialogRef.close();
-
   })
  }
 

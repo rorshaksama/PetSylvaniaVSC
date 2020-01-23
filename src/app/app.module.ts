@@ -21,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { GardeComponent } from './garde/garde.component';
+import { GarderComponent } from './garder/garder.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { GardeComponent } from './garde/garde.component';
     AlerteComponent,
     FormulaireAlerteComponent,
     PopupComponent,
-    GardeComponent
+    GardeComponent,
+    GarderComponent
   ],
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent],
   imports: [

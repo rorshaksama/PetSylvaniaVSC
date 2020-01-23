@@ -9,14 +9,14 @@
             <textarea  matInput name="login" [(ngModel)]="u.login" placeholder="Votre nom"></textarea>
         </mat-form-field >
         <mat-form-field class="example-full-width ">
-            <input matInput placeholder="Votre e-mail" value="">
-          </mat-form-field>
-          <mat-form-field class="example-full-width ">
-            <input matInput placeholder="Nom de l'animal" value="">
-          </mat-form-field>
-          <mat-form-field class="example-full-width ">
-            <input matInput placeholder="Description" value="">
-          </mat-form-field>
+          <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail" value="">
+        </mat-form-field>
+        <mat-form-field class="example-full-width ">
+          <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal" value="">
+        </mat-form-field>
+        <mat-form-field class="example-full-width ">
+          <input matInput name="contenu" [(ngModel)]="add.contenu" placeholder="Description" value="">
+        </mat-form-field>
         <br>
     </form>
     <div class="text-center">
