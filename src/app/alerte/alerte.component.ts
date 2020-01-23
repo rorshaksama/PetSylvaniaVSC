@@ -7,7 +7,7 @@ import { Alerte } from '../model/Alerte';
 import { MatDialog } from '@angular/material/dialog';
 import { FormulaireAlerteComponent } from '../formulaire-alerte/formulaire-alerte.component';
 import { Message } from '../model/message';
-import { User } from '../model/user';
+import { User } from '../model/User';
 
 @Component({
   selector: 'app-alerte',
