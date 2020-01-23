@@ -26,7 +26,29 @@ export class ConnexionComponent implements OnInit {
   dejaConnecte() {
     if (this.myservice.connect === true) {
 
-      this.route.navigate(['myMemo']);
+     // this.route.navigate(['bienvenue']);      //Pour rester sur la page actuel laiser les //
+    }
+  }
+
+  connexion() {
+    this.myservice.msgIfNotConnect = '';
+    this.http.post(this.myservice.lienHttp + 'bienvenue', this.user).subscribe(data => {
+      this.verifUser(data);
+
+    });
+  }
+  verifUser(data) {
+    this.u = data;
+
+    if (this.u.login != null) {
+      console.log('ok');
+      this.myservice.userConnecte = data;
+      localStorage.setItem('UserConnectStorage', JSON.stringify(data)); // MISE EN MEMOIRE DES INFOS
+     // this.route.navigate(['bienvenue']);   // A CHANGER SI ON VEUT LE GUIDER VERS AUTRE PART
+
+    } else {
+      console.log('NO NO NO');
+      this.infoConnection = 'identifiants ou mdp inccorecte';
     }
   }
 
