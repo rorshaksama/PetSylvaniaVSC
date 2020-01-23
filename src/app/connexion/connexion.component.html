@@ -1,10 +1,12 @@
-<div class="container html">
+<div class="container ">
 	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3 class="text-center">Page de connexion</h3>
+		<div class="card"  >
+			
+		
 
-			</div>
+				<h3 class="text-center">Page de connexion</h3>
+		
+			
 			<div class="card-body">
 				<form (ngSubmit)="connexion()">
 					<div class="input-group form-group">
@@ -24,24 +26,23 @@
 					</div>
 
 					<div class="form-group">
-						<button type="submit" class="btn float-right login_btn">Valider</button>
+						<button type="submit" class="btn login_btn centre" style="margin: auto;">Valider</button>
 					</div>
 				</form>
 
 			<!---->	<form (ngSubmit)="callMyInsciption()">
 
-					<div class="card-footer">
+					<div>
 						<div class="d-flex justify-content-center links">
 							<button class="btn btn-link btn-block" style="color: white;">S'inscrire</button>
 						</div>
-
 					</div>
 
 
 
 				</form>
 
-
+<p style="color: white;">{{infoConnection}}</p>
 
 			</div>
 

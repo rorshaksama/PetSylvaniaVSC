@@ -17,22 +17,11 @@ align-content: center;
 
 .card{
  
-height: 370px;
+height: 270px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(141, 218, 221, 0.4) !important;
-}
-
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: rgb(238, 201, 90);
-}
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
 }
 
 .card-header h3{
@@ -87,4 +76,12 @@ color: white;
 
 .links a{
 margin-left: 4px;
+}
+
+.centre{
+    display: flex !important;
+  justify-content: center !important;
+}
+.centre{
+    margin: auto !important;
 }
