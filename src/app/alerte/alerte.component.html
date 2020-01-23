@@ -1,5 +1,5 @@
-<div>
-    <h3 class="card-header myCardStyleHeader" >Alertes en cours 
+<div class="scroll">
+    <h3 class="card-header myCardStyleHeader" style="color: red; text-align: center;">Alertes en cours 
         <button (click)="addAlerte()">+</button>
     </h3>
     <div *ngFor="let a of alertes">
@@ -11,9 +11,14 @@
                 <button (click)="deleteAlerte(a.id)">
                     Effacer
                 </button>
+                <button (click)="reponseAlerte(a, recup1.value, recup2.value)">
+                    Répondre
+                </button><br>
+                <p></p>
+                <input type="text" name="truc" #recup1  placeholder="Tapez ici votre login" class="form-control text-center">
+                <input type="text" name="mess" #recup2  placeholder="Tapez ici votre réponse" class="form-control text-center">
                 <br><br>
             </div>
         </div>
     </div>
-
 </div>

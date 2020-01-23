@@ -37,11 +37,18 @@ export class ConnexionComponent implements OnInit {
     this.myservice.msgIfNotConnect = '';
     this.http.post(this.myservice.lienHttp + 'connexion', this.user).subscribe(data => {
       this.verifUser(data);
-      this.dialogref.close();
-      console.log(this.user.login);
       this.u = this.myservice.recupUserConnectLocalStorage();
-      console.log('connect:   ' + this.myservice.connect);
-      console.log('mConnecte:   ' + this.myservice.mConnecte);
+      console.log(this.u);
+      if (this.u.login != null) {
+        this.dialogref.close();
+      }
+
+
+
+
+      // 
+      // console.log('connect:   ' + this.myservice.connect);
+      // console.log('mConnecte:   ' + this.myservice.mConnecte);
 
 
     });
@@ -58,7 +65,7 @@ export class ConnexionComponent implements OnInit {
 
     } else {
       console.log('NO NO NO');
-      this.infoConnection = 'identifiants ou mdp inccorecte';
+      this.infoConnection = 'identifiants ou mdp inccorecte, veuillez ré-éssayer';
     }
   }
   callMyInsciption() {

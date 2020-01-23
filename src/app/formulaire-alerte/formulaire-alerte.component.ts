@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Alerte } from '../model/Alerte';
 import { Router } from '@angular/router';
