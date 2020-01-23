@@ -1,6 +1,7 @@
 @media (max-width: 123px) { /* Remplacez 123px par la taille de votre choix */
     .navbar-header {
     float: none;
+    
     }
     .navbar-toggle {
     display: block;
