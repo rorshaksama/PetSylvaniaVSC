@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { GardeComponent } from './garde/garde.component';
 import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 
 @NgModule({
@@ -34,9 +35,10 @@ import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.componen
     FormulaireAlerteComponent,
     PopupComponent,
     GardeComponent,
-    PageBienvenueComponent
+    PageBienvenueComponent,
+    InscriptionComponent
   ],
-  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent],
+  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

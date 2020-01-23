@@ -25,19 +25,27 @@
 
 					<div class="form-group">
 						<button type="submit" class="btn float-right login_btn">Valider</button>
-
-
-
-
 					</div>
 				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					<button type="button" onclick="location.href='inscription' "class="btn btn-link btn-block"style="color: white;" >S'inscrire</button>
-				</div>
+
+				<form (ngSubmit)="callMyInsciption()">
+
+					<div class="card-footer">
+						<div class="d-flex justify-content-center links">
+							<button class="btn btn-link btn-block" style="color: white;">S'inscrire</button>
+						</div>
+
+					</div>
+
+
+
+				</form>
+
+
 
 			</div>
+
+
 		</div>
 	</div>
 </div>
