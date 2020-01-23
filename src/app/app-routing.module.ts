@@ -4,12 +4,14 @@ import { VoirAdoptionComponent } from './voir-adoption/voir-adoption.component';
 import { GardeComponent } from './garde/garde.component';
 import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { GarderComponent } from './garder/garder.component';
 
 
 
 const routes: Routes = [
   { path: 'voirAdoption', component: VoirAdoptionComponent },
   { path: 'garde', component: GardeComponent },
+  { path: 'garder', component: GarderComponent },
   { path: 'bienvenue', component: PageBienvenueComponent },
   { path: '', redirectTo: 'bienvenue', pathMatch: 'full' }
 ];

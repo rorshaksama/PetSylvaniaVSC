@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MyserviceService } from '../myservice.service';
 import { HttpClient } from '@angular/common/http';
-import { Alerte } from '../model/alerte';
+import { Alerte } from '../model/Alerte';
 import { MatDialog } from '@angular/material/dialog';
 import { FormulaireAlerteComponent } from '../formulaire-alerte/formulaire-alerte.component';
 

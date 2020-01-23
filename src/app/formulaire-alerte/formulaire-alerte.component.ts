@@ -1,11 +1,11 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Alerte } from '../model/alerte';
+import { Alerte } from '../model/Alerte';
 import { Router } from '@angular/router';
 import { MyserviceService } from '../myservice.service';
 import { HttpClient } from '@angular/common/http';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { User } from '../model/user';
+import { User } from '../model/User';
 
 @Component({
   selector: 'app-formulaire-alerte',

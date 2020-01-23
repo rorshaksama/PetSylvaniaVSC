@@ -1,4 +1,4 @@
-import { Animal } from './animal';
+import { Animal } from './Animal';
 
 export class Adoption {
     id: number;

@@ -1,5 +1,5 @@
-import { User } from './user';
-import { Type } from './type';
+import { User } from './User';
+import { Type } from './Type';
 
 export class Animal {
     id: number;

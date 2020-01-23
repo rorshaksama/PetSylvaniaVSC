@@ -1,0 +1,29 @@
+.mat-card{
+ 
+    background: white;
+}
+
+.mat-card-header{
+    
+}
+
+.mat-card-title{
+    color: rgb(100, 132, 139);
+    text-align: center;
+}
+
+.mat-card-subtitle{
+
+    color: rgb(100, 132, 139);
+    text-align: center;
+}
+
+.mat-card-content{
+   
+    color: black
+}
+
+.buttonStyle{
+
+    background:  rgb(100, 132, 139);
+}

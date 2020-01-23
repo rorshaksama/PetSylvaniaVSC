@@ -26,6 +26,7 @@ import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.componen
 import { InscriptionComponent } from './inscription/inscription.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
     GarderComponent,
     PageBienvenueComponent,
     InscriptionComponent
+   
   ],
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent],
   imports: [
