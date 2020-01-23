@@ -25,6 +25,8 @@ import { GarderComponent } from './garder/garder.component';
 import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { Menu2Component } from './menu2/menu2.component';
+import { MenugardeComponent } from './menugarde/menugarde.component';
+import { FairegarderComponent } from './fairegarder/fairegarder.component';
 
 
 
@@ -41,7 +43,9 @@ import { Menu2Component } from './menu2/menu2.component';
     GarderComponent,
     PageBienvenueComponent,
     InscriptionComponent,
-    Menu2Component
+    Menu2Component,
+    MenugardeComponent,
+    FairegarderComponent
   ],
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent],
   imports: [
