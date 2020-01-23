@@ -10,7 +10,7 @@ import { AlerteComponent } from '../alerte/alerte.component';
 })
 export class Menu2Component implements OnInit {
   t;
-  constructor(private myservice: MyserviceService,private dialog: MatDialog) { }
+  constructor(private myservice: MyserviceService, private dialog: MatDialog) { }
 
   ngOnInit() {
   }

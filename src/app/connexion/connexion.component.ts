@@ -29,7 +29,7 @@ export class ConnexionComponent implements OnInit {
   dejaConnecte() {
     if (this.myservice.connect === true) {
 
-      // this.route.navigate(['bienvenue']);      //Pour rester sur la page actuel laiser les //
+      this.route.navigate(['bienvenue']);
     }
   }
 
@@ -42,15 +42,6 @@ export class ConnexionComponent implements OnInit {
       if (this.u.login != null) {
         this.dialogref.close();
       }
-
-
-
-
-      // 
-      // console.log('connect:   ' + this.myservice.connect);
-      // console.log('mConnecte:   ' + this.myservice.mConnecte);
-
-
     });
   }
   verifUser(data) {
