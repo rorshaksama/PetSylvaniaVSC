@@ -1,44 +1,52 @@
 <br>
+<hr>
 <h2 class="text-center titre">Adopter un animal</h2>
-<br>
-
-<br><br>
-<div class = "StyleBar">
-  <ng-multiselect-dropdown  [placeholder]="'Type'" [data]="dropdownType" [(ngModel)]="selectedType"
-    [settings]="dropdownSettings" (onSelect)="onTypeSelect($event)" (onSelectAll)="onSelectAllType($event)" (onDeSelect)="onTypeDeselect($event)"  (onDeSelectAll)="onDeSelectAllType($event)" >
-  </ng-multiselect-dropdown>
-  <br>
-</div>
-
-<div class="mydiv">
-
-      <div *ngFor="let ad of adoptions " class="essai">
-        <mat-card class="example-card text-center " *ngIf="test(ad)">
-          <mat-card-header back-ground='white'>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ad.animal.type.type}} {{ad.animal.nom}} </mat-card-title>
-            <mat-card-subtitle>{{ad.animal.user.nom}}</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              {{ad.contenu}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button type ="submit" text-center class="buttonStyle">CONTACTER {{ad.animal.user.nom}} </button>
-          </mat-card-actions>
-        </mat-card>
-
-      </div>
-    
-  
-</div>
-  
-<br><br><br><br>
+<hr>
 
 <div>
- <!-- <button  *ngIf="myservice.connect" class="btn btn-primary" style="background-color: rgb(100, 132, 139); border-color: rgb(100, 132, 139);" (click)="addAdoption()"> Faire adopter mon animal </button>-->
-  <button  class="btn btn-primary buttonStyle" (click)=callMyPopop()>Mettre à l'adoption</button>
+  
+  <button class="btn btn-primary buttonStyle" (click)=callMyPopop()> Mettre à l'adoption </button> 
+  <br>
+  
 </div>
+<br>
+<br>
+<div class="StyleBar">
+  <ng-multiselect-dropdown [placeholder]="'Type'" [data]="dropdownType" [(ngModel)]="selectedType"
+    [settings]="dropdownSettings" (onSelect)="onTypeSelect($event)" (onSelectAll)="onSelectAllType($event)"
+    (onDeSelect)="onTypeDeselect($event)" (onDeSelectAll)="onDeSelectAllType($event)">
+  </ng-multiselect-dropdown>
+
+</div>
+<br>
+<br>
+<div class='row'>
+  <div class="col-sm-3 margin" *ngFor="let ad of adoptions ">
+    <div class="mydiv ">
+
+      <mat-card class="example-card text-center card " *ngIf="test(ad)">
+        <mat-card-header back-ground='white'>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ad.animal.type.type}} {{ad.animal.nom}} </mat-card-title>
+          <mat-card-subtitle>{{ad.animal.user.nom}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{ad.contenu}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button type="submit" text-center class="buttonStyle">CONTACTER {{ad.animal.user.nom}} </button>
+        </mat-card-actions>
+      </mat-card>
+
+
+    </div>
+    <br>
+  </div>
+
+</div>
+
+
+

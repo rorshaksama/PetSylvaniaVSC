@@ -5,17 +5,22 @@
     <br>
     <form class=" example-form ">
 
-        <mat-form-field class="example-full-width " >
-            <textarea  matInput name="login" [(ngModel)]="u.login" placeholder="Votre nom"></textarea>
-        </mat-form-field >
+       
+
+
         <mat-form-field class="example-full-width ">
-          <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail" value="">
+          <input matInput name="login" [(ngModel)]="u.login" placeholder="Votre login" 
+          >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width ">
+          <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail" >
         </mat-form-field>
         <mat-form-field class="example-full-width ">
-          <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal" value="">
+          <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal" >
         </mat-form-field>
         <mat-form-field class="example-full-width ">
-          <input matInput name="contenu" [(ngModel)]="add.contenu" placeholder="Description" value="">
+          <input matInput name="contenu" [(ngModel)]="add.contenu" placeholder="Description">
         </mat-form-field>
         <br>
     </form>
