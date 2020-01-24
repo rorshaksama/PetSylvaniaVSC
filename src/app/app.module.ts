@@ -29,6 +29,8 @@ import { FairegarderComponent } from './fairegarder/fairegarder.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PopupgardeComponent } from './popupgarde/popupgarde.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 @NgModule({
@@ -67,10 +69,8 @@ import { HistogardeComponent } from './histogarde/histogarde.component';
     MatDialogModule,
     MatInputModule,
     MatIconModule,
-  
-  ],
-  providers: [
-   
+    MatMenuModule
+
   ],
   bootstrap: [AppComponent]
 })

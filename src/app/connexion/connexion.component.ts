@@ -29,7 +29,7 @@ export class ConnexionComponent implements OnInit {
   dejaConnecte() {
     if (this.myservice.connect === true) {
 
-      // this.route.navigate(['bienvenue']);      //Pour rester sur la page actuel laiser les //
+      this.route.navigate(['bienvenue']);
     }
   }
 
@@ -38,19 +38,10 @@ export class ConnexionComponent implements OnInit {
     this.http.post(this.myservice.lienHttp + 'connexion', this.user).subscribe(data => {
       this.verifUser(data);
       this.u = this.myservice.recupUserConnectLocalStorage();
-      console.log(this.u);
+     // console.log(this.u);
       if (this.u.login != null) {
         this.dialogref.close();
       }
-
-
-
-
-      // 
-      // console.log('connect:   ' + this.myservice.connect);
-      // console.log('mConnecte:   ' + this.myservice.mConnecte);
-
-
     });
   }
   verifUser(data) {
@@ -60,8 +51,8 @@ export class ConnexionComponent implements OnInit {
       console.log('ok');
       this.myservice.userConnecte = data;
       localStorage.setItem('UserConnectStorage', JSON.stringify(data)); // MISE EN MEMOIRE DES INFOS
-      // this.route.navigate(['menu2']);   // A CHANGER SI ON VEUT LE GUIDER VERS AUTRE PART
-
+     //console.log(localStorage);
+      
 
     } else {
       console.log('NO NO NO');

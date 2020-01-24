@@ -1,1 +1,49 @@
-<p>profile works!</p>
+<div class="d-flex justify-content-center">
+    <div class="card" style="text-align: center;">
+        <div class="card-header">
+            <h3 style="text-align: center;">Profil</h3>
+
+        </div>
+        <div class="card-body">
+            <form>
+
+                <div class="input-group form-group" style="margin-left: 50px;">
+                    Nom : {{u.nom}} <mat-icon (click)="hideAndShowNom()" style="position: fixed;  margin-left: 250px;"> create</mat-icon>
+                </div>
+
+
+                <div class="input-group form-group" style="margin-left: 50px;">
+
+                    Prenom: {{u.prenom}}<mat-icon style="position: fixed;  margin-left: 250px;"> create<span class="modifierT"></span>  </mat-icon>
+
+
+
+                </div>
+
+                <div class="input-group form-group" style="margin-left: 50px;">
+
+                    E-Mail: {{u.mail}}<mat-icon style="position: fixed;  margin-left: 250px;"> create</mat-icon>
+
+                </div>
+                <div class="input-group form-group"style="margin-left: 50px;">
+
+                    Identifiant: {{u.login}}<mat-icon style="position: fixed;  margin-left: 250px;"> create</mat-icon>
+                    <!--[(ngModel)]="user.login" -->
+
+                </div>
+
+                <div class="input-group form-group"style="margin-left: 50px;">
+
+                    Mot de passe: {{u.mdp}}<mat-icon style="position: fixed;  margin-left: 250px;"> create</mat-icon>
+                    <!--[(ngModel)]="user.mdp" -->
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn login_btn centre" style="margin: auto;">Valider les modifications</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</div>
