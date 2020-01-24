@@ -28,6 +28,7 @@ import { Menu2Component } from './menu2/menu2.component';
 import { MenugardeComponent } from './menugarde/menugarde.component';
 import { FairegarderComponent } from './fairegarder/fairegarder.component';
 import { ProfileComponent } from './profile/profile.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -63,7 +64,8 @@ import { ProfileComponent } from './profile/profile.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
 
   ],
   providers: [],
