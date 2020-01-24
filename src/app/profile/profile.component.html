@@ -11,7 +11,7 @@
                     <p>{{Cname}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myName">
-                    <input  class="form-control" #recup type="text">
+                    <input  class="form-control" #nom type="text" value="{{ u.nom }}">
                     <button (click)="changeNom(recup.value)">Valider</button>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <p>{{Cprenom}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myPrenom">
-                    <input class="form-control" #prenom type="text">
+                    <input class="form-control" #prenom type="text" value="{{ u.prenom }}">
                     <button (click)="changePrenom(prenom.value)">Valider</button>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     <p>{{Cmail}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myMail">
-                    <input class="form-control" #mail type="text">
+                    <input class="form-control" #mail type="text" value="{{ u.mail }}">
                     <button (click)="changeMail(mail.value)">Valider</button>
                 </div>
             </div>
@@ -50,12 +50,12 @@
                     <p>{{Clogin}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myLogin">
-                    <input class="form-control" #login type="text">
+                    <input class="form-control" #login type="text" value="{{ u.login }}">
                     <button (click)="changeLogin(login.value)">Valider</button>
                 </div>
             </div>
             <div class="form-group">
-                <button type="submit" (click)="modificationUser(recup.value, prenom.value, mail.value, login.value)" class="btn login_btn centre" style="margin: auto;">Valider les
+                <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre" style="margin: auto;">Valider les
                     modifications</button>
             </div>
         </form>

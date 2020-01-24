@@ -120,12 +120,12 @@ export class ProfileComponent implements OnInit {
 
   modificationUser(nom, prenom, mail, login) {
 
-    let user: User = new User();
+    const user: User = new User();
 
-    user = this.u;
+    user.nom = nom;
 
 
-    if (this.nomBool) {
+   /* if (this.nomBool) {
       user.nom = nom;
     }
 
@@ -139,7 +139,9 @@ export class ProfileComponent implements OnInit {
 
     if(this.loginBool){
       user.login = login;
-    }
+    }*/
+
+
 
     this.http.put(this.myservice.lienHttp + this.u.id, user).subscribe(data => {
       this.ngOnInit();
