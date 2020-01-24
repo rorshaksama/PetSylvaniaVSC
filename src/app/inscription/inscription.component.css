@@ -47,7 +47,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: rgb(238, 201, 90);
+background-color: rgb(229, 208, 143);
 color: black;
 border:0 !important;
 }
@@ -72,7 +72,7 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: rgb(238, 201, 90);
+background-color: rgb(229, 208, 143);
 width: 100px;
 }
 
@@ -88,3 +88,31 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+
+.div{
+
+    border-style: solid;
+    border-color:  rgb(100, 132, 139);
+  
+  }
+  
+  .bouton{
+  
+    border-style: solid;
+    border-color: rgb(229, 208, 143);
+    color: white;
+  }
+
+  .centre{
+    display: flex !important;
+  justify-content: center !important;
+}
+.centre{
+    margin: auto !important;
+    color: white
+}
+.titre{
+    color: rgb(123, 163, 173);
+    letter-spacing: 3px;
+    font-size: 35px;
+ }
