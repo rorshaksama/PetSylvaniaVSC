@@ -1,31 +1,36 @@
-<br><br><br>
-<button class="btn btn-primary buttonStyle center" (click)=CallMypopupgarde()> Faire garder mon animal </button> 
+
+<div class="bandeau" >
+<br>
+  <h4 class="h5" >Vos animaux à faire garder</h4>
+
+</div>
+
+    
   <br>
 
+
   <div class='row'>
-    <div class="col-sm-3 margin" *ngFor="let ad of adoptions ">
+    <div class="col-sm-4 margin" *ngFor="let ga of garder ">
       <div class="mydiv ">
   
-        <mat-card class="example-card text-center card " *ngIf="test(ad)">
+        <mat-card class="example-card text-center card " >
           <mat-card-header back-ground='white'>
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ad.animal.type.type}} {{ad.animal.nom}} </mat-card-title>
-            <mat-card-subtitle>{{ad.animal.user.nom}}</mat-card-subtitle>
+            <mat-card-title></mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
           </mat-card-header>
           <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>
             <p>
-              {{ad.contenu}}
+              {{ ga.nom }}
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-button type="submit" text-center class="buttonStyle">CONTACTER {{ad.animal.user.nom}} </button>
+            <button class="btn btn-primary buttonStyle" (click)=CallMypopupgarde(ga)> Faire garder mon animal </button> 
           </mat-card-actions>
         </mat-card>
   
   
-      </div>
-      <br>
-    </div>
+      </div>    </div>
   
-  </div>
+  

@@ -21,16 +21,28 @@ export class PopupgardeComponent implements OnInit {
   constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupgardeComponent>) { }
 
   ngOnInit() {
+    this.u = this.myservice.recupUserConnectLocalStorage();
   }
   addGarde() {
 
-    this.ga.userGardien = this.u;
-    this.ga.animal = this.a;
+    // this.ga.userGardien = this.u;
+    // this.ga.animal = this.a;
 
-    console.log('ga ', this.ga);
+    // console.log('ga ', this.ga);
 
-    this.http.post(this.myservice.lienHttp + 'createGarde', this.ga).subscribe(data => {
+    // this.http.post(this.myservice.lienHttp + 'createGarde', this.ga).subscribe(data => {
+    //   this.dialogRef.close();
+    // });
+
+
+    const animal = this.myservice.myAnimalFaireGarder;
+    this.ga.animal = animal;
+
+    this.http.post(this.myservice.lienHttp + 'garde', this.ga).subscribe(data => {
       this.dialogRef.close();
+    }, err => {
+      console.log(err);
     });
+
   }
 }
