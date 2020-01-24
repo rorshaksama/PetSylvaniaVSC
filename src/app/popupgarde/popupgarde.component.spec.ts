@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenugardeComponent } from './menugarde.component';
+import { PopupgardeComponent } from './popupgarde.component';
 
-describe('MenugardeComponent', () => {
-  let component: MenugardeComponent;
-  let fixture: ComponentFixture<MenugardeComponent>;
+describe('PopupgardeComponent', () => {
+  let component: PopupgardeComponent;
+  let fixture: ComponentFixture<PopupgardeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenugardeComponent ]
+      declarations: [ PopupgardeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenugardeComponent);
+    fixture = TestBed.createComponent(PopupgardeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

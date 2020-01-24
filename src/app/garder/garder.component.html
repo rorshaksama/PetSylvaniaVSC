@@ -1,5 +1,4 @@
 
-<app-menugarde></app-menugarde>
 <br>
 <div class="StyleBar">
   <ng-multiselect-dropdown [placeholder]="'Type'" [data]="dropdownType" [(ngModel)]="selectedType"
@@ -14,7 +13,7 @@
     <div class="col-sm-3 margin" *ngFor="let ga of garde ">
       <div class="mydiv ">
   
-        <mat-card class="example-card text-center card " >
+        <mat-card class="example-card text-center card "*ngIf="test(ga)" >
           <mat-card-header back-ground='white'>
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{ga.animal.type.type}} {{ga.animal.nom}}</mat-card-title>

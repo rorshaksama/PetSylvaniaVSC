@@ -25,10 +25,10 @@ import { GarderComponent } from './garder/garder.component';
 import { PageBienvenueComponent } from './page-bienvenue/page-bienvenue.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { Menu2Component } from './menu2/menu2.component';
-import { MenugardeComponent } from './menugarde/menugarde.component';
 import { FairegarderComponent } from './fairegarder/fairegarder.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { PopupgardeComponent } from './popupgarde/popupgarde.component';
+import { HistogardeComponent } from './histogarde/histogarde.component';
 
 
 @NgModule({
@@ -45,11 +45,14 @@ import { ProfileComponent } from './profile/profile.component';
     PageBienvenueComponent,
     InscriptionComponent,
     Menu2Component,
-    MenugardeComponent,
     FairegarderComponent,
-    ProfileComponent
+    ProfileComponent,
+    PopupgardeComponent,
+    HistogardeComponent
   ],
-  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent],
+  // tslint:disable-next-line: max-line-length
+  entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent,
+     PopupgardeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -63,10 +66,12 @@ import { ProfileComponent } from './profile/profile.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatInputModule,
-    MatIconModule
-
+    MatIconModule,
+  
   ],
-  providers: [],
+  providers: [
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

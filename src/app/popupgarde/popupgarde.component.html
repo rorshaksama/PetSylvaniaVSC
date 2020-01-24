@@ -1,0 +1,31 @@
+<div class="container ">
+    <br>
+    <h2 class="text-center ">Formulaire de mise à l'adoption</h2>
+    <p class="text-center ">Remplissez les informations suivantes</p>
+    <br>
+    <form class=" example-form ">
+
+        <mat-form-field class="example-full-width ">
+            <input matInput name="login" [(ngModel)]="u.login" placeholder="Votre login">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width ">
+            <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput name="contenu" [(ngModel)]="ga.contenu" placeholder="Description de votre demande">
+        </mat-form-field>
+    
+    </form>
+
+    <div class="text-center">
+        <button class="btn btn-primary" style="background-color: rgb(100, 132, 139); border-color: rgb(100, 132, 139);"
+            (click)="addGarde()"> Demander une garde </button>
+    </div>
+
+    <br>
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { PopupgardeComponent } from '../popupgarde/popupgarde.component';
+
 
 @Component({
   selector: 'app-fairegarder',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FairegarderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
   }
-
+  CallMypopupgarde() {
+    const mydial = this.dialog.open(PopupgardeComponent);
+  }
 }
