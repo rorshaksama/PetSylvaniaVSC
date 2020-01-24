@@ -1,67 +1,58 @@
-<div>
-    <nav class="navbar  navbar-expand-lg  navbar-light navbarstyle"
-        style="background-image: url('assets/image/bandeau.jpg'); height: 100px;font-size: large;">
-        <a class="navbar-brand"></a>
+<nav class="navbar  navbar-expand-lg  navbar-light navbarstyle"
+    style="background-image: url('assets/image/bandeau.jpg'); margin: 0px auto; height: 100px;font-size: large;">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <button mat-button [matMenuTriggerFor]="menu">Profil</button>
-                <mat-menu #menu="matMenu">
-                    <button mat-menu-item class="nav-link" routerLink="profile">Voir son profil</button>
-                    <button mat-menu-item>Gérer ses animaux</button>
-                    <button mat-menu-item>
-                        <a class="nav-link" (click)="test()"
-                            style="color: rgb(201, 119, 119);"><strong>DECONNEXION</strong></a>
-                    </button>
-                </mat-menu>
+    <div >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="voirAdoption">Adopter</a>
-                </li>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="card">
 
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="garde">Garde</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <button mat-button [matMenuTriggerFor]="menu">Profil</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item class="nav-link" routerLink="profile">Voir son profil</button>
+                        <button mat-menu-item>Gérer ses animaux</button>
+                        <button mat-menu-item>
+                            <a class="nav-link" (click)="test()"
+                                style="color: rgb(201, 119, 119);"><strong>DECONNEXION</strong></a>
+                        </button>
+                    </mat-menu>
 
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="fiche">Fiches</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="voirAdoption">Adopter</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="forum">Forum</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="garde">Garde</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="reseau">Réseau</a>
-                </li>
-                <!--
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="fiche">Fiches</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="forum">Forum</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="reseau">Réseau</a>
+                    </li>
+                    <!--
                 <li class="nav-item">
                     <a class="nav-link" routerLink="profile">Profile</a>
                 </li> -->
 
 
 
-                <li class="nav-item ">
-                    <a class="nav-link" (click)="callMyPopop()"
-                        style="color: rgb(201, 119, 119);"><strong>ALERTES!</strong></a>
-                </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </ul>
+                    <li class="nav-item ">
+                        <a class="nav-link" (click)="callMyPopop()"
+                            style="color: rgb(201, 119, 119);"><strong>ALERTES!</strong></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>

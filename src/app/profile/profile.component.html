@@ -1,78 +1,63 @@
 <div class="d-flex justify-content-center">
-    <div class="card">
-        <div class="card-header">
-            <h3 style="text-align: center;">Profil</h3>
-
-        </div>
-        <div class="card-body">
-            <form>
-
-
-                <div class="input-group form-group">
-                    <div  style="margin-left: 50px;">
-                        Nom : <p *ngIf="myPName" >{{u.nom}}
-                            <mat-icon (click)="hideAndShowNom()" style="position: fixed;  margin-left: 150px;">create
-                            </mat-icon>
-                        </p>
-                        <p>{{Cname}}</p>
-                    </div>
-                    <div class="col-sm-12" *ngIf="myName">
-                        <input class="form-control" #recup type="text">
-                        <button (click)="changeNom(recup.value)">Valider</button>
-                    </div>
+    
+    <div>
+        <form><h3 style="text-align: center;">Profil</h3>
+            <div class="input-group form-group">
+                <div style="margin-left: 50px;">
+                    Nom : <p *ngIf="myPName">{{u.nom}}
+                        <mat-icon (click)="hideAndShowNom()" style="position: fixed;  margin-left: 150px;">create
+                        </mat-icon>
+                    </p>
+                    <p>{{Cname}}</p>
                 </div>
-
-
-                <div class="input-group form-group">
-                    <div  style="margin-left: 50px;">
-                        Prenom :<p *ngIf="myPPrenom">{{u.prenom}}
-                            <mat-icon (click)="hideAndShowPrenom()" style="position: fixed;  margin-left: 150px;">create
-                            </mat-icon>
-                        </p>
-                        <p>{{Cprenom}}</p>
-                    </div>
-                    <div class="col-sm-12" *ngIf="myPrenom">
-                        <input class="form-control" #prenom type="text">
-                        <button (click)="changePrenom(prenom.value)">Valider</button>
-                    </div>
+                <div class="col-sm-12" *ngIf="myName">
+                    <input class="form-control" #recup type="text">
+                    <button (click)="changeNom(recup.value)">Valider</button>
                 </div>
-
-
-                <div class="input-group form-group">
-                    <div  style="margin-left: 50px;">
-                        Mail: <p *ngIf="myPMail">{{u.mail}}
-                            <mat-icon (click)="hideAndShowMail()" style="position: fixed;  margin-left: 100px;">create
-                            </mat-icon>
-                        </p>
-                        <p>{{Cmail}}</p>
-                    </div>
-                    <div class="col-sm-12" *ngIf="myMail">
-                        <input class="form-control" #mail type="text">
-                        <button (click)="changeMail(mail.value)">Valider</button>
-                    </div>
+            </div>
+            <div class="input-group form-group">
+                <div style="margin-left: 50px;">
+                    Prenom :<p *ngIf="myPPrenom">{{u.prenom}}
+                        <mat-icon (click)="hideAndShowPrenom()" style="position: fixed;  margin-left: 150px;">create
+                        </mat-icon>
+                    </p>
+                    <p>{{Cprenom}}</p>
                 </div>
-
-                <div class="input-group form-group">
-                    <div  style="margin-left: 50px;">
-                        Identifiant: <p *ngIf="myPLogin">{{u.login}}
-                            <mat-icon (click)="hideAndShowLogin()" style="position: fixed;  margin-left: 100px;">create
-                            </mat-icon>
-                        </p>
-                        <p>{{Clogin}}</p>
-                    </div>
-                    <div class="col-sm-12" *ngIf="myLogin">
-                        <input class="form-control" #login type="text">
-                        <button (click)="changeLogin(login.value)">Valider</button>
-                    </div>
+                <div class="col-sm-12" *ngIf="myPrenom">
+                    <input class="form-control" #prenom type="text">
+                    <button (click)="changePrenom(prenom.value)">Valider</button>
                 </div>
-
-                <div class="form-group">
-                    <button type="submit" class="btn login_btn centre" style="margin: auto;">Valider les
-                        modifications</button>
+            </div>
+            <div class="input-group form-group">
+                <div style="margin-left: 50px;">
+                    Mail: <p *ngIf="myPMail">{{u.mail}}
+                        <mat-icon (click)="hideAndShowMail()" style="position: fixed;  margin-left: 100px;">create
+                        </mat-icon>
+                    </p>
+                    <p>{{Cmail}}</p>
                 </div>
-            </form>
-        </div>
-
-
+                <div class="col-sm-12" *ngIf="myMail">
+                    <input class="form-control" #mail type="text">
+                    <button (click)="changeMail(mail.value)">Valider</button>
+                </div>
+            </div>
+            <div class="input-group form-group">
+                <div style="margin-left: 50px;">
+                    Identifiant: <p *ngIf="myPLogin">{{u.login}}
+                        <mat-icon (click)="hideAndShowLogin()" style="position: fixed;  margin-left: 100px;">create
+                        </mat-icon>
+                    </p>
+                    <p>{{Clogin}}</p>
+                </div>
+                <div class="col-sm-12" *ngIf="myLogin">
+                    <input class="form-control" #login type="text">
+                    <button (click)="changeLogin(login.value)">Valider</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn login_btn centre" style="margin: auto;">Valider les
+                    modifications</button>
+            </div>
+        </form>
     </div>
 </div>
