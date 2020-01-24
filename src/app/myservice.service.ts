@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from './model/User';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +14,9 @@ export class MyserviceService {
 
   msgIfNotConnect;
 
-  constructor() { }
+  constructor(private route: Router) { }
 
-  recupUserLocalStorage(){
+  recupUserLocalStorage() {
     const u: User = JSON.parse(localStorage.getItem('UserConnectStorage'));
     this.userConnecte = u;
   }
@@ -39,8 +40,8 @@ export class MyserviceService {
     localStorage.clear();
     this.connect = false;
     this.mConnecte = true;
-    console.log('A++++');
     console.log('connect:   ' + this.connect);
     console.log('mConnecte:   ' + this.mConnecte);
+    this.route.navigate(['bienvenue']);
   }
 }

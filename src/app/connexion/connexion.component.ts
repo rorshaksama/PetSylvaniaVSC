@@ -38,7 +38,7 @@ export class ConnexionComponent implements OnInit {
     this.http.post(this.myservice.lienHttp + 'connexion', this.user).subscribe(data => {
       this.verifUser(data);
       this.u = this.myservice.recupUserConnectLocalStorage();
-     // console.log(this.u);
+      // console.log(this.u);
       if (this.u.login != null) {
         this.dialogref.close();
       }
@@ -51,8 +51,8 @@ export class ConnexionComponent implements OnInit {
       console.log('ok');
       this.myservice.userConnecte = data;
       localStorage.setItem('UserConnectStorage', JSON.stringify(data)); // MISE EN MEMOIRE DES INFOS
-     //console.log(localStorage);
-      
+      console.log(localStorage);
+
 
     } else {
       console.log('NO NO NO');
