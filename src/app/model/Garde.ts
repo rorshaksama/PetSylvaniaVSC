@@ -9,7 +9,5 @@ export class Garde {
     dateFin: Date;
     animal: Animal;
     userGardien: User;
-    userProprio: User;
-
     constructor() { }
 }

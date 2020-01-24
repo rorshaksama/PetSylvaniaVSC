@@ -11,6 +11,8 @@ export class MyserviceService {
   connect = false;
   mConnecte = true;
 
+  myAnimalFaireGarder;
+
   msgIfNotConnect;
 
   constructor() { }

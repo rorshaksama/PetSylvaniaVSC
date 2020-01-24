@@ -1,31 +1,20 @@
 <div class="container ">
     <br>
-    <h2 class="text-center ">Formulaire de mise à l'adoption</h2>
-    <p class="text-center ">Remplissez les informations suivantes</p>
-    <br>
-    <form class=" example-form ">
+   <form (ngSubmit)="addGarde()">
+    <h2 class="text-center ">Choisissez vos dates</h2>
 
-        <mat-form-field class="example-full-width ">
-            <input matInput name="login" [(ngModel)]="u.login" placeholder="Votre login">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width ">
-            <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal">
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-            <input matInput name="contenu" [(ngModel)]="ga.contenu" placeholder="Description de votre demande">
-        </mat-form-field>
-    
-    </form>
-
-    <div class="text-center">
-        <button class="btn btn-primary" style="background-color: rgb(100, 132, 139); border-color: rgb(100, 132, 139);"
-            (click)="addGarde()"> Demander une garde </button>
+    <div class="form-group">
+        <input type="date" id="date" name="dateDebut"  [(ngModel)] = "ga.dateDebut"  placeholder="Date déébur" class="form-control text-center">
     </div>
 
-    <br>
+    <div class="form-group">
+        <input type="date" id="date" name="dateFin" [(ngModel)] = "ga.dateFin"   placeholder="" class="form-control text-center">
+    </div>
+
+    <div class="form-group">
+        <input type="text"  name="contenu" [(ngModel)] = "ga.contenu"   placeholder="" class="form-control text-center">
+    </div>
+
+    <button class="btn btn-primary buttonStyle center" > Valider </button>
+   </form>
 </div>
