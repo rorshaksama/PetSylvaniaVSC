@@ -14,39 +14,41 @@
 
 
     <div>
-      
 
 
-            <div *ngFor="let a of alertes">
-                <div class="card-header">
-                    <p>{{a.user.login}} a perdu </p>
-                    <div class="card-body">
-                        {{a.message}} <br>
-                        <p>disparu le {{a.dateDisparition}}</p><br>
-                        <div *ngIf="voirB(a) ">
-                            <button mat-fab class="decoButton" (click)="deleteAlerte(a.id)">
-                                <mat-icon>delete</mat-icon>
-                            </button>
-                        </div>
 
-                        
-                        <p></p>
-                        <input type="text" name="truc" #recup1 placeholder="Tapez ici votre login"
-                            class="form-control text-center">
-                        <input type="text" name="mess" #recup2 placeholder="Tapez ici votre réponse"
-                            class="form-control text-center">
-
-
-                            <div class="example-button-row">
-                                <button mat-raised-button (click)="reponseAlerte(a, recup1.value, recup2.value)">
-                                    Répondre
-                                </button>
-                            </div>
-
-                           
-                        <br><br>
+        <div *ngFor="let a of alertes">
+            <div class="card-header">
+                <p>{{a.user.login}} a perdu </p>
+                <div class="card-body">
+                    {{a.message}} <br>
+                    <p>disparu le {{a.dateDisparition}}</p><br>
+                    <div *ngIf="voirB(a) ">
+                        <button mat-fab class="decoButton" (click)="deleteAlerte(a.id)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
                     </div>
+
+
+                    <p></p>
+                    <input type="text" name="truc" #recup1 placeholder="Tapez ici votre login"
+                        class="form-control text-center">
+                    <input type="text" name="mess" #recup2 placeholder="Tapez ici votre réponse"
+                        class="form-control text-center">
+
+
+                    <div class="example-button-row">
+                        <button mat-raised-button (click)="reponseAlerte(a, recup1.value, recup2.value)">
+                            Répondre
+                        </button>
+                    </div>
+
+                   
+                    <br><br>
                 </div>
-      
+            </div>
+
+        </div>
     </div>
+
 </div>

@@ -51,6 +51,7 @@ export class ProfileComponent implements OnInit {
       this.animal = a;
 
     });
+
   }
 
 
