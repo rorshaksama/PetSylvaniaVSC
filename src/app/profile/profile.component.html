@@ -1,11 +1,16 @@
-<div class="d-flex justify-content-center">
+<br><br>
+<h3 class='bandeau'style="text-align: center;">
+    Mon profil</h3>
+<br><br>
+<div class="d-flex justify-content-center card">
     
     <div>
-        <form><h3 style="text-align: center;">Profil</h3>
+        <br>
+        <form>
             <div class="input-group form-group">
-                <div style="margin-left: 50px;">
-                    Nom : <p *ngIf="myPName">{{u.nom}}
-                        <mat-icon (click)="hideAndShowNom()" style="position: fixed;  margin-left: 150px;">create
+              <div style="margin-left: 50px;">
+                   <p class="text">Nom :</p> <hr>  <p *ngIf="myPName">{{u.nom}}
+                        <mat-icon (click)="hideAndShowNom()" style="margin-left: 200px;">create
                         </mat-icon>
                     </p>
                     <p>{{Cname}}</p>
@@ -17,21 +22,21 @@
             </div>
             <div class="input-group form-group">
                 <div style="margin-left: 50px;">
-                    Prenom :<p *ngIf="myPPrenom">{{u.prenom}}
-                        <mat-icon (click)="hideAndShowPrenom()" style="position: fixed;  margin-left: 150px;">create
+                    <p class="text"> Prenom :</p> <hr><p *ngIf="myPPrenom">{{u.prenom}}
+                        <mat-icon (click)="hideAndShowPrenom()" style="margin-left: 200px;">create
                         </mat-icon>
                     </p>
                     <p>{{Cprenom}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myPrenom">
                     <input class="form-control" #prenom type="text" value="{{ u.prenom }}">
-                    <button (click)="changePrenom(prenom.value)">Valider</button>
+                    <button  (click)="changePrenom(prenom.value)">Valider</button>
                 </div>
             </div>
             <div class="input-group form-group">
                 <div style="margin-left: 50px;">
-                    Mail: <p *ngIf="myPMail">{{u.mail}}
-                        <mat-icon (click)="hideAndShowMail()" style="position: fixed;  margin-left: 100px;">create
+                    <p class="text"> Mail : </p> <hr> <p *ngIf="myPMail">{{u.mail}}
+                        <mat-icon (click)="hideAndShowMail()" style="margin-left: 150px;">create
                         </mat-icon>
                     </p>
                     <p>{{Cmail}}</p>
@@ -43,19 +48,19 @@
             </div>
             <div class="input-group form-group">
                 <div style="margin-left: 50px;">
-                    Identifiant: <p *ngIf="myPLogin">{{u.login}}
-                        <mat-icon (click)="hideAndShowLogin()" style="position: fixed;  margin-left: 100px;">create
+                    <p class="text"> Identifiant : </p> <hr> <p *ngIf="myPLogin">{{u.login}}
+                        <mat-icon (click)="hideAndShowLogin()" style="margin-left: 200px; ">create
                         </mat-icon>
                     </p>
                     <p>{{Clogin}}</p>
                 </div>
                 <div class="col-sm-12" *ngIf="myLogin">
-                    <input class="form-control" #login type="text" value="{{ u.login }}">
+                    <input class="form-control " #login type="text" value="{{ u.login }}">
                     <button (click)="changeLogin(login.value)">Valider</button>
                 </div>
             </div>
             <div class="form-group">
-                <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre" style="margin: auto;">Valider les
+                <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre " style="margin: auto;">Valider les
                     modifications</button>
             </div>
         </form>
