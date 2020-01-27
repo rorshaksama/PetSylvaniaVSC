@@ -2,112 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-html,body{
-background-color: rgba(0, 0, 255, 0.5);
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
-}
 
 .container{
 height: 100%;
 align-content: center;
 }
 
-
-
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: rgb(238, 201, 90);
-}
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
-}
-
 .card-header h3{
     color: white;
     }
 
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
+.center{
+text-align: center;
 }
 
-.input-group-prepend span{
-width: 50px;
-background-color: rgb(238, 201, 90);
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
-}
-
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
 
 .login_btn{
+ 
 color: black;
-background-color: rgb(238, 201, 90);
-width: 350px;
+background-color: rgb(231, 211, 150);
+width: 300px;
+text-align: center;
+
+  display: block;
+  margin : auto;
+
 }
 
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.links{
-color: white;
-}
-
-.links a{
-margin-left: 4px;
-}
-.iconeModifier{
-    margin-right: 20px !important;
-}
-
-.icon-arrow-right {
-    float: right;
-    margin-top: 2px;
-    margin-right: -6px;
-    }
-
-    .modifierT{
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-        top: -5px;
-        left: 105%;
-      }
-
-      
+  
       .card {
         /* Add shadows to create the "card" effect */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -128,10 +50,28 @@ margin-left: 4px;
     .text{
       color:rgba(72, 95, 100, 0.945);
       font-weight: bold;
+      font-size: medium;
     }
 
     .icon{
 
       float: left;
 
+
+    }
+
+    .p1{
+      color:rgba(72, 95, 100, 0.945);
+      font-weight: bold;
+      font-size: medium;
+      text-align: center;
+    }
+
+    .p2{
+      font-style: italic;
+
+      color:rgba(72, 95, 100, 0.945);
+
+      font-size: small;
+      text-align: center;
     }
