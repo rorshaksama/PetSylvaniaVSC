@@ -9,6 +9,7 @@ export class MyserviceService {
   userConnecte: User = new User();
 
   lienHttp = 'http://localhost:8099/';
+  // lienHttp = 'http://51.254.112.59:8080/petsylvanie2/';
   connect = false;
   mConnecte = true;
 

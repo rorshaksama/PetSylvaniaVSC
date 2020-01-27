@@ -118,11 +118,11 @@ export class ProfileComponent implements OnInit {
 
 
 
-  modificationUser(nom, prenom, mail, login) {
+  modificationUser() {
 
     const user: User = new User();
 
-    user.nom = nom;
+    //user.nom = nom;
 
 
    /* if (this.nomBool) {

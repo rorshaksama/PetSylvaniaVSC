@@ -13,8 +13,8 @@
 <br>
 <div class="StyleBar">
   <ng-multiselect-dropdown [placeholder]="'Type'" [data]="dropdownType" [(ngModel)]="selectedType"
-    [settings]="dropdownSettings" (onSelect)="onTypeSelect($event)" (onSelectAll)="onSelectAllType($event)"
-    (onDeSelect)="onTypeDeselect($event)" (onDeSelectAll)="onDeSelectAllType($event)">
+    [settings]="dropdownSettings" (onSelect)="onTypeSelect($event)" (onSelectAll)="onSelectAllType()"
+    (onDeSelect)="onTypeDeselect($event)" (onDeSelectAll)="onDeSelectAllType()">
   </ng-multiselect-dropdown>
 
 </div>

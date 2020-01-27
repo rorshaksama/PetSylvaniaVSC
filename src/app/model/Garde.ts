@@ -5,7 +5,7 @@ import { Animal } from './Animal';
 export class Garde {
     id: number;
     contenu: string;
-    dateDébut: Date;
+    dateDebut: Date;
     dateFin: Date;
     animal: Animal;
     userGardien: User;

@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-sm-12" *ngIf="myName">
                     <input  class="form-control" #nom type="text" value="{{ u.nom }}">
-                    <button (click)="changeNom(recup.value)">Valider</button>
+                    <button (click)="changeNom(nom.value)">Valider</button>
                 </div>
             </div>
             <div class="input-group form-group">
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre " style="margin: auto;">Valider les
+                <button type="submit" (click)="modificationUser()" class="btn login_btn centre " style="margin: auto;">Valider les
                     modifications</button>
             </div>
         </form>
