@@ -132,6 +132,15 @@ export class VoirAdoptionComponent implements OnInit {
   }
   callMyPopop() {
     const mydial = this.dialog.open(PopupComponent);
+
+    mydial.afterClosed().subscribe(r => {
+      this.ngOnInit();
+    });
+
   }
+
+
+
+  
 
 }

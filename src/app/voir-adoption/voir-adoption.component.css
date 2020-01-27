@@ -1,11 +1,10 @@
 .mat-card{
 
     background: white;
+    height: 525px;
 }
 
-.mat-card-header{
-    
-}
+
 
 .mat-card-title{
     color: rgb(100, 132, 139);
@@ -25,7 +24,11 @@
 
 .buttonStyle{
 
-    background:  rgb(100, 132, 139);
+    background:   rgb(100, 132, 139);
+    color:white;
+    display: block;
+    margin : auto;
+    
 }
 .test1 {
     margin-right: 4px;
@@ -57,4 +60,33 @@
 
   .margin{
       margin-left: 6%;
+  }
+
+  .p1{
+     text-align: center;
+
+  }
+  .buttonStyle2{
+  
+    border-style: solid;
+    border-color: rgb(100, 132, 139);
+    color: white;
+    background-color: rgba(100, 132, 139, 0.767);
+
+  }
+
+  .img {
+    width: 100%;
+    margin-bottom: 18%;
+  }
+  .card-picture {
+    width: 23%;
+    margin-bottom: 2%;
+  }
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+  .search-form {
+    width: 90%;
   }
