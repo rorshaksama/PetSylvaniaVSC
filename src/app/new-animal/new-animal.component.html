@@ -1,0 +1,42 @@
+<div class="container div">
+    <div class="justify-content-center ">
+        <div class="card">
+            <div class="card-header">
+                <h3 style="text-align: center;  " class="titre">Inscription d'un nouvel animal</h3>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="createUser()">
+
+                    <div class="input-group form-group">
+
+                        <input type="text" class="form-control" name="nom" placeholder="Nom de l'animal">
+                        <!--[(ngModel)]="u.nom" -->
+
+                    </div>
+
+                    <div class="input-group form-group">
+
+                        <select>
+                            <option disabled selected>Choisir le type de l'animal</option>
+                            <option value="">Chat</option>
+                            <option value="">Chien</option>
+                            <option value="">Rongeur</option>
+                            <option value="">Oiseau</option>
+
+
+                        </select>
+                    </div>
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" name="description"
+                            placeholder="Description de l'animal">
+                        <!--[(ngModel)]="u.nom" -->
+
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
