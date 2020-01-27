@@ -20,7 +20,7 @@ export class MyserviceService {
 
   recupUserLocalStorage() {
     const u: User = JSON.parse(localStorage.getItem('UserConnectStorage'));
-    this.userConnecte = u;
+
   }
 
 

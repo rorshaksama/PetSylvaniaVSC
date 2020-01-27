@@ -5,7 +5,8 @@
 
 <div>
   
-  <button class="btn btn-primary buttonStyle" (click)=callMyPopop()> Mettre à l'adoption </button> 
+  <button class="btn buttonStyle" *ngIf="HSConnecte()" (click)=callMyPopop()> Mettre à l'adoption </button> <br>
+  <button class="btn buttonStyle" (click)=callMyPopop()> Mettre à l'adoption </button> 
   <br>
   
 </div>
