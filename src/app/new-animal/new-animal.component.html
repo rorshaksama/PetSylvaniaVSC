@@ -12,11 +12,8 @@
                         <input type="text" class="form-control" name="nomAnimal" [(ngModel)]="a.nom"
                             placeholder="Nom de l'animal">
                     </div>
-
                     <hr>
-
-                    
-                    <div> Veuillez choisir le type de votre animal: 
+                    <div> Veuillez choisir le type de votre animal:
                         <select required [(ngModel)]="t.id" name="id">
                             <option value="1">chien</option>
                             <option value="2">chat</option>
@@ -24,13 +21,8 @@
                             <option value="4">rongeur</option>
                             <option value="5">lapin</option>
                         </select>
-                    </div> 
-
-
-
-
+                    </div>
                     <hr>
-
                     <div>
                         Date de naissance de l'animal: <input type="date" id="daten" name="dateNaissance"
                             [(ngModel)]="a.dateDeNaissance">
@@ -43,13 +35,78 @@
                     <div class="form-group">
                         <button type="submit" class="btn login_btn centre bouton" style="margin: auto;">Valider</button>
                     </div>
-
-
-
                 </form>
             </div>
 
 
         </div>
     </div>
+</div>
+<div class='row'>
+    <div class="col-sm-4 margin" *ngFor="let a of animal ">
+
+
+        <div class="">
+            <br>
+            <p class="p1"> Informations de {{a.nom}} </p>
+            <p class="p2">Cliquez sur le stylo pour modifier ses informations</p>
+            <hr>
+            <form>
+                <div class="input-group form-group center">
+                    <div style="margin-left: 50px;">
+                        <p class="text">Nom :</p>
+                        <p *ngIf="myPName">{{a.nom}}
+                            <mat-icon (click)="hideAndShowNom()" style="margin-left: 210px;">create
+                            </mat-icon>
+                        </p>
+                        <p>{{Cname}}</p>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12" *ngIf="myName">
+                        <input class="form-control" #nom type="text" value="{{ u.nom }}">
+                        <button (click)="changeNom(recup.value)">Valider</button>
+                    </div>
+                </div>
+                <div class="input-group form-group">
+                    <div style="margin-left: 50px;">
+                        <p class="text"> Date de naissance :</p>
+                        <p *ngIf="myPPrenom">{{a.dateNaissance}}
+                            <mat-icon (click)="hideAndShowPrenom()" style="margin-left: 200px;">create
+                            </mat-icon>
+                        </p>
+                        <p>{{Cprenom}}</p>
+                        <hr>
+                    </div>
+
+                    <div class="col-sm-12" *ngIf="myPrenom">
+                        <input class="form-control" #prenom type="text" value="{{ u.prenom }}">
+                        <button (click)="changePrenom(prenom.value)">Valider</button>
+                    </div>
+                </div>
+                <div class="input-group form-group">
+                    <div style="margin-left: 50px;">
+                        <p class="text"> Description</p>
+                        <p *ngIf="myPMail">{{a.description}}
+                            <mat-icon (click)="hideAndShowMail()" style="margin-left: 150px;">create
+                            </mat-icon>
+                        </p>
+                        <p>{{Cmail}}</p>
+                        <hr>
+                    </div>
+                    <div class="col-sm-12" *ngIf="myMail">
+                        <input class="form-control" #mail type="text" value="{{ u.mail }}">
+                        <button (click)="changeMail(mail.value)">Valider</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre "
+                        style="margin: auto;">Valider les
+                        modifications</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
 </div>
