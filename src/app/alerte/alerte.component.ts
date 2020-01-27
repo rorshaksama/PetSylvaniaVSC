@@ -22,14 +22,22 @@ export class AlerteComponent implements OnInit {
   u: User = new User();
   truc: string;
   mess: string;
+  lo;
   user;
   a;
+  utilisateur;
+  visible = false;
 
-  constructor(private route: Router, public myservice: MyserviceService, private http: HttpClient, private dialog: MatDialog) { }
+  constructor(private route: Router, public myservice: MyserviceService, private http: HttpClient, private dialog: MatDialog) {
+    this.utilisateur = this.myservice.recupUserConnectLocalStorage();
+  }
 
   ngOnInit() {
     this.http.get(this.myservice.lienHttp + 'alerte').subscribe(a => {
       this.alertes = a;
+      console.log("alertes " + this.alerte);
+      //this.a.user = this.a;
+      //this.u.login = this.lo;
     });
   }
 
@@ -47,14 +55,7 @@ export class AlerteComponent implements OnInit {
     mydial.afterClosed().subscribe(result => {
       this.ngOnInit();
 
-      /*this.alerte.user.login = result.login;
-      this.alerte.message = result.message;
-      this.alerte.dateDisparition = result.dateDisparition;*/
     });
-
-    /* this.http.post(this.myservice.lienHttp + 'createAlerte', this.alerte).subscribe(data => {
-       this.ngOnInit();
-     });*/
   }
 
   reponseAlerte(alerte, login, message) {
@@ -77,4 +78,52 @@ export class AlerteComponent implements OnInit {
     this.alerte.message = this.alerte.message + "\n" + login + " a répondu : " + this.message.contenu;
     this.ngOnInit();
   }
+  hideAndShow() {
+    if (this.visible === true) {
+      this.visible = false;
+    } else {
+      this.visible = true;
+    }
+  }
+  cache;
+
+  unnom(alerte) {
+    /*  const ap = this.http.post(this.myservice.lienHttp + 'alerte/usercreate/' + this.utilisateur.id, alerte).toPromise();
+  
+      ap.then(x => {
+        this.cache = x;
+      });
+  
+    this.http.post(this.myservice.lienHttp + 'alerte/usercreate/' + this.utilisateur.id, alerte).subscribe(s => {
+      this.cache = s;
+    });
+
+    console.log('cache ', this.cache);*/
+
+
+    if (alerte.id === this.utilisateur.id) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+  voirB(alerte) {
+    if (this.myservice.mConnecte === false) {
+      console.log('ss ', this.unnom(alerte));
+      return this.unnom(alerte);
+    } else {
+      return false;
+    }
+  }
+
+
+  //  if (this.utilisateur.id === this.alerte.user) {
+  //    this.visible = true;
+  //  } else {
+  //    this.visible = false;
+  //   }
+
+
 }

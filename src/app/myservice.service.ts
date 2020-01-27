@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { User } from './model/User';
 import { Router } from '@angular/router';
+import { Animal } from './model/Animal';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MyserviceService {
   userConnecte: User = new User();
-
+  animalConnecte: Animal = new Animal();
   lienHttp = 'http://localhost:8099/';
   // lienHttp = 'http://51.254.112.59:8080/petsylvanie2/';
   connect = false;
@@ -21,7 +22,12 @@ export class MyserviceService {
 
   recupUserLocalStorage() {
     const u: User = JSON.parse(localStorage.getItem('UserConnectStorage'));
-    this.userConnecte = u;
+
+  }
+
+  recupanimal() {
+    const a: Animal = JSON.parse(localStorage.getItem('AnimalConnectStorage'));
+    return this.animalConnecte;
   }
 
 

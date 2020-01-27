@@ -14,9 +14,9 @@
                     <button mat-button [matMenuTriggerFor]="menu">Profil</button>
                     <mat-menu #menu="matMenu">
                         <button mat-menu-item  routerLink="profile">Voir son profil</button>
-                        <button mat-menu-item>Gérer ses animaux</button>
-                        <button mat-menu-item>
-                            <a class="nav-link" (click)="test()"
+                        <button mat-menu-item routerLink="nouvelAnimal">Gérer ses animaux</button>
+                        <button mat-menu-item >
+                            <a class="nav-link" (click)="deconnexion()"
                                 style="color: rgb(201, 119, 119);"><strong>DECONNEXION</strong></a>
                         </button>
                     </mat-menu>
@@ -39,14 +39,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link" routerLink="veto">Réseau</a>
-                    </li>
-                    <!--
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="profile">Profile</a>
-                </li> -->
-
-
-
+                    </li>             
                     <li class="nav-item ">
                         <a class="nav-link" (click)="callMyPopop()"
                             style="color: rgb(201, 119, 119);"><strong>ALERTES!</strong></a>

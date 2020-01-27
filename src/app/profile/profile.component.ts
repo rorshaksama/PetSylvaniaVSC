@@ -10,7 +10,7 @@ import { User } from '../model/User';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
- // user: User = new User();
+  // user: User = new User();
   u;
   infoConnexion;
 
@@ -38,12 +38,20 @@ export class ProfileComponent implements OnInit {
   mailBool = false;
   loginBool = false;
 
+  animal;
+
   constructor(private http: HttpClient, private route: Router, private myservice: MyserviceService) {
     this.u = this.myservice.recupUserConnectLocalStorage();
+
     if (this.u === null) {
       this.myservice.msgIfNotConnect = 'Voud devez vous connecter pour accéder à cette page';
       this.route.navigate(['bienvenue']);
     }
+    this.http.get(this.myservice.lienHttp + 'animal/user/' + this.u.id).subscribe(a => {
+      this.animal = a;
+
+    });
+
   }
 
 
@@ -125,21 +133,21 @@ export class ProfileComponent implements OnInit {
     //user.nom = nom;
 
 
-   /* if (this.nomBool) {
-      user.nom = nom;
-    }
-
-    if (this.prenomBool) {
-      user.prenom = prenom;
-    }
-
-    if (this.mailBool) {
-      user.mail = mail;
-    }
-
-    if(this.loginBool){
-      user.login = login;
-    }*/
+    /* if (this.nomBool) {
+       user.nom = nom;
+     }
+ 
+     if (this.prenomBool) {
+       user.prenom = prenom;
+     }
+ 
+     if (this.mailBool) {
+       user.mail = mail;
+     }
+ 
+     if(this.loginBool){
+       user.login = login;
+     }*/
 
 
 

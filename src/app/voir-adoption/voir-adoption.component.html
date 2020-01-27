@@ -1,13 +1,17 @@
-<br>
-<hr>
 <h2 class="text-center titre">Adopter un animal</h2>
-<hr>
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+
+  <button class="btn btn-primary buttonStyle" (click)=callMyPopop()> Mettre à l'adoption </button>
+  <br>
+
+</nav>
 
 <div>
-  
-  <button class="btn btn-primary buttonStyle" (click)=callMyPopop()> Mettre à l'adoption </button> 
-  <br>
-  
+
+
+
 </div>
 <br>
 <br>
@@ -20,33 +24,51 @@
 </div>
 <br>
 <br>
-<div class='row'>
-  <div class="col-sm-3 margin" *ngFor="let ad of adoptions ">
-    <div class="mydiv ">
 
-      <mat-card class="example-card text-center card " *ngIf="test(ad)">
-        <mat-card-header back-ground='white'>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{ad.animal.type.type}} {{ad.animal.nom}} </mat-card-title>
-          <mat-card-subtitle>{{ad.animal.user.nom}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            {{ad.contenu}}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button type="submit" text-center class="buttonStyle">CONTACTER {{ad.animal.user.nom}} </button>
-        </mat-card-actions>
-      </mat-card>
 
+
+<div class="container">
+  <div class="row">
+
+    <div class="" *ngFor="let ad of adoptions ">
+
+      <div *ngIf="test(ad)">
+        <div class="mydiv ">
+          <mat-card class="example-card text-center card ">
+            <mat-card-header back-ground='white'>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{ad.animal.type.type}} {{ad.animal.nom}} </mat-card-title>
+              <mat-card-subtitle>Propriétaire : {{ad.animal.user.nom}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+              alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{ad.contenu}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button type="submit" text-center class="buttonStyle2">CONTACTER {{ad.animal.user.nom}}
+              </button>
+            </mat-card-actions>
+
+          </mat-card>
+
+
+        </div>
+
+      </div>
 
     </div>
-    <br>
   </div>
 
 </div>
 
 
 
+
+
+
+
+
+<br><br><br><br><br>

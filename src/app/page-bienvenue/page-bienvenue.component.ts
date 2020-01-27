@@ -11,15 +11,13 @@ import { Router } from '@angular/router';
 })
 export class PageBienvenueComponent implements OnInit {
   u;
-
   constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router) {
     this.u = myservice.recupUserConnectLocalStorage();
   }
   ngOnInit() {
     if (this.u !== null) {
       console.log('connecte toi');
-      this.route.navigate(['voirAdoption']);
+      this.route.navigate(['bienvenue']);
     }
   }
-
 }

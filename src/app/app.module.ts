@@ -31,10 +31,11 @@ import { PopupgardeComponent } from './popupgarde/popupgarde.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { VetoComponent } from './veto/veto.component';
+import {MatSelectModule} from '@angular/material/select';
+import { NewAnimalComponent } from './new-animal/new-animal.component';
 
-
-
-
+import {MatListModule} from '@angular/material/list';
+import {FlexLayoutModule} from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { VetoComponent } from './veto/veto.component';
     ProfileComponent,
     PopupgardeComponent,
     HistogardeComponent,
-    VetoComponent
+    VetoComponent,
+    NewAnimalComponent
   ],
   // tslint:disable-next-line: max-line-length
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent,
@@ -72,7 +74,10 @@ import { VetoComponent } from './veto/veto.component';
     MatDialogModule,
     MatInputModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule,
+    MatListModule,
+    FlexLayoutModule,
 
   ],
   bootstrap: [AppComponent]

@@ -1,11 +1,21 @@
-<div class="scroll">
-    <h3 class="card-header myCardStyleHeader" style=" text-align: center;">Alertes en cours
-        <button (click)="addAlerte()">
-            <mat-icon>library_add</mat-icon>
-        </button>
-    </h3>
+<br>
+<div class="scroll ">
+    <div class="cardborder example-button-row">
+        <h3 style=" text-align: center;">Alertes en cours
 
-    <div class='card2'>
+
+            <button mat-fab class="decoButton" (click)="addAlerte()">
+                <mat-icon>library_add</mat-icon>
+            </button>
+
+        </h3>
+    </div>
+
+
+
+    <div>
+
+
 
         <div *ngFor="let a of alertes">
             <div class="card-header">
@@ -13,21 +23,32 @@
                 <div class="card-body">
                     {{a.message}} <br>
                     <p>disparu le {{a.dateDisparition}}</p><br>
-                    <button (click)="deleteAlerte(a.id)">
-                        Effacer
-                    </button>
-                    <button (click)="reponseAlerte(a, recup1.value, recup2.value)">
-                        Répondre
-                    </button><br>
-                   
+                    <div *ngIf="voirB(a) ">
+                        <button mat-fab class="decoButton" (click)="deleteAlerte(a.id)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+
+
                     <p></p>
                     <input type="text" name="truc" #recup1 placeholder="Tapez ici votre login"
                         class="form-control text-center">
                     <input type="text" name="mess" #recup2 placeholder="Tapez ici votre réponse"
                         class="form-control text-center">
+
+
+                    <div class="example-button-row">
+                        <button mat-raised-button (click)="reponseAlerte(a, recup1.value, recup2.value)">
+                            Répondre
+                        </button>
+                    </div>
+
+                   
                     <br><br>
                 </div>
             </div>
+
         </div>
     </div>
+
 </div>

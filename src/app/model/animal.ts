@@ -8,6 +8,7 @@ export class Animal {
     type: Type;
     description: string;
     dateNaissance: Date;
+    
 
     constructor() {}
 }

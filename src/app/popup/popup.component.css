@@ -9,7 +9,9 @@
     width: 100%;
   }
  .monH2{
-  border-style: solid; 
+
+  border-bottom: solid; 
+  border-color:  rgb(100, 132, 139) ;
  }
 
   .MyPopup{

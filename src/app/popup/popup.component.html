@@ -1,32 +1,41 @@
-<div class="container MyPopup" style="background-color: white; " >
-<br>
-    <h2 class="text-center monH2" >Formulaire de mise à l'adoption</h2>
-    <p class="text-center ">Remplissez les informations suivantes</p>
+<div class="container MyPopup" style="background-color: white; ">
+  <br>
+  <h2 class="text-center monH2">Formulaire de mise à l'adoption</h2>
+  <p class="text-center ">Remplissez les informations suivantes</p>
+  <br>
+  <form class=" example-form ">
+
+
+
+
+    <mat-form-field class="example-full-width ">
+      <input matInput name="login" [(ngModel)]="u.login" placeholder="Votre login">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width ">
+      <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail">
+    </mat-form-field>
+    <mat-form-field class="example-full-width ">
+      <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Type</mat-label>
+      <mat-select #valtype>
+        <mat-option  *ngFor="let ty of type" [value]="ty.id" >
+          {{ty.type}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width ">
+      <input matInput name="contenu" [(ngModel)]="add.contenu" placeholder="Description">
+    </mat-form-field>
     <br>
-    <form class=" example-form ">
+  </form>
+  <div class="text-center">
+    <button class="btn btn-primary" style="background-color: rgb(100, 132, 139); border-color: rgb(100, 132, 139);"
+      (click)="addAdoption(valtype.value)"> Mettre à l'adoption </button>
+  </div>
 
-       
+  <br>
 
-
-        <mat-form-field class="example-full-width ">
-          <input matInput name="login" [(ngModel)]="u.login" placeholder="Votre login">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width ">
-          <input matInput name="mail" [(ngModel)]="u.mail" placeholder="Votre e-mail" >
-        </mat-form-field>
-        <mat-form-field class="example-full-width ">
-          <input matInput name="nom" [(ngModel)]="a.nom" placeholder="Nom de l'animal" >
-        </mat-form-field>
-        <mat-form-field class="example-full-width ">
-          <input matInput name="contenu" [(ngModel)]="add.contenu" placeholder="Description">
-        </mat-form-field>
-        <br>
-    </form>
-    <div class="text-center">
-        <button class="btn btn-primary" style="background-color: rgb(100, 132, 139); border-color: rgb(100, 132, 139);" (click)="addAdoption()"> Mettre à l'adoption </button>
-      </div>
-      
-<br>
-     
 </div>

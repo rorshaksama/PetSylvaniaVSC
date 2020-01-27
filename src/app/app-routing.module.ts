@@ -9,6 +9,7 @@ import { FairegarderComponent } from './fairegarder/fairegarder.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
 import { VetoComponent } from './veto/veto.component';
+import { NewAnimalComponent } from './new-animal/new-animal.component';
 
 
 
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'bienvenue', component: PageBienvenueComponent },
   { path: '', redirectTo: 'bienvenue', pathMatch: 'full' },
   { path: 'profile', component: ProfileComponent },
-  { path: 'veto', component: VetoComponent }
+  { path: 'veto', component: VetoComponent },
+  { path: 'nouvelAnimal', component: NewAnimalComponent }
 
 ];
 
