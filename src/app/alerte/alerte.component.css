@@ -117,3 +117,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-height: calc(100vh - 210px);
     overflow-y: auto;
 }
+
+.card2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
