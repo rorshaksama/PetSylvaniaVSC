@@ -13,9 +13,12 @@
                 <div class="card-body">
                     {{a.message}} <br>
                     <p>disparu le {{a.dateDisparition}}</p><br>
-                    <button (click)="deleteAlerte(a.id)">
+                    <div *ngIf="voirB(a) " >
+                        <button (click)="deleteAlerte(a.id)">
                         Effacer
                     </button>
+                    </div>
+                    
                     <button (click)="reponseAlerte(a, recup1.value, recup2.value)">
                         Répondre
                     </button><br>

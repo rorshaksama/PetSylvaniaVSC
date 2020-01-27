@@ -5,33 +5,46 @@
                 <h3 style="text-align: center;  " class="titre">Inscription d'un nouvel animal</h3>
             </div>
             <div class="card-body">
-                <form (ngSubmit)="createUser()">
+                <form (ngSubmit)="createAnimal()">
 
                     <div class="input-group form-group">
 
-                        <input type="text" class="form-control" name="nom" placeholder="Nom de l'animal">
-                        <!--[(ngModel)]="u.nom" -->
-
+                        <input type="text" class="form-control" name="nomAnimal" [(ngModel)]="a.nom"
+                            placeholder="Nom de l'animal">
                     </div>
 
-                    <div class="input-group form-group">
+                    <hr>
 
-                        <select>
-                            <option disabled selected>Choisir le type de l'animal</option>
-                            <option value="">Chat</option>
-                            <option value="">Chien</option>
-                            <option value="">Rongeur</option>
-                            <option value="">Oiseau</option>
-
-
+                    
+                    <div> Veuillez choisir le type de votre animal: 
+                        <select required [(ngModel)]="t.id" name="id">
+                            <option value="1">chien</option>
+                            <option value="2">chat</option>
+                            <option value="3">oiseau</option>
+                            <option value="4">rongeur</option>
+                            <option value="5">lapin</option>
                         </select>
-                    </div>
-                    <div class="input-group form-group">
-                        <input type="text" class="form-control" name="description"
-                            placeholder="Description de l'animal">
-                        <!--[(ngModel)]="u.nom" -->
+                    </div> 
 
+
+
+
+                    <hr>
+
+                    <div>
+                        Date de naissance de l'animal: <input type="date" id="daten" name="dateNaissance"
+                            [(ngModel)]="a.dateDeNaissance">
                     </div>
+                    <hr>
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" name="description" placeholder="Description de l'animal"
+                            [(ngModel)]="a.description">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn login_btn centre bouton" style="margin: auto;">Valider</button>
+                    </div>
+
+
 
                 </form>
             </div>
