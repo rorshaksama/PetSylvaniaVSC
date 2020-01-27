@@ -8,27 +8,30 @@ import { GarderComponent } from './garder/garder.component';
 import { FairegarderComponent } from './fairegarder/fairegarder.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
+import { VetoComponent } from './veto/veto.component';
 
 
 
 const routes: Routes = [
   { path: 'voirAdoption', component: VoirAdoptionComponent },
-  { path: 'garde', component: GardeComponent ,
-  children: [
-    {
-      path: 'garder', component: GarderComponent
-    },
-    {
-      path: 'fairegarder', component: FairegarderComponent
-    },
-    {
-      path: 'mesgardes', component: HistogardeComponent
-    }
-  ]
-},
+  {
+    path: 'garde', component: GardeComponent,
+    children: [
+      {
+        path: 'garder', component: GarderComponent
+      },
+      {
+        path: 'fairegarder', component: FairegarderComponent
+      },
+      {
+        path: 'mesgardes', component: HistogardeComponent
+      }
+    ]
+  },
   { path: 'bienvenue', component: PageBienvenueComponent },
   { path: '', redirectTo: 'bienvenue', pathMatch: 'full' },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'veto', component: VetoComponent }
 
 ];
 

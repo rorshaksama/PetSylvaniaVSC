@@ -30,6 +30,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { PopupgardeComponent } from './popupgarde/popupgarde.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { VetoComponent } from './veto/veto.component';
 
 
 
@@ -50,7 +51,8 @@ import {MatMenuModule} from '@angular/material/menu';
     FairegarderComponent,
     ProfileComponent,
     PopupgardeComponent,
-    HistogardeComponent
+    HistogardeComponent,
+    VetoComponent
   ],
   // tslint:disable-next-line: max-line-length
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent,
