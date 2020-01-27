@@ -32,6 +32,7 @@ import { HistogardeComponent } from './histogarde/histogarde.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { VetoComponent } from './veto/veto.component';
 import {MatSelectModule} from '@angular/material/select';
+import { NewAnimalComponent } from './new-animal/new-animal.component';
 
 import {MatListModule} from '@angular/material/list';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -53,7 +54,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     ProfileComponent,
     PopupgardeComponent,
     HistogardeComponent,
-    VetoComponent
+    VetoComponent,
+    NewAnimalComponent
   ],
   // tslint:disable-next-line: max-line-length
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent,

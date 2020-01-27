@@ -10,7 +10,7 @@ import { User } from '../model/User';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
- // user: User = new User();
+  // user: User = new User();
   u;
   infoConnexion;
 
@@ -132,21 +132,21 @@ export class ProfileComponent implements OnInit {
     user.nom = nom;
 
 
-   /* if (this.nomBool) {
-      user.nom = nom;
-    }
-
-    if (this.prenomBool) {
-      user.prenom = prenom;
-    }
-
-    if (this.mailBool) {
-      user.mail = mail;
-    }
-
-    if(this.loginBool){
-      user.login = login;
-    }*/
+    /* if (this.nomBool) {
+       user.nom = nom;
+     }
+ 
+     if (this.prenomBool) {
+       user.prenom = prenom;
+     }
+ 
+     if (this.mailBool) {
+       user.mail = mail;
+     }
+ 
+     if(this.loginBool){
+       user.login = login;
+     }*/
 
 
 

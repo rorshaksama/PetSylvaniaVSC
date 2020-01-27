@@ -15,7 +15,7 @@ export class Menu2Component implements OnInit {
   ngOnInit() {
   }
 
-  test() {
+  deconnexion() {
     this.t = this.myservice.deconnexion();
   }
   callMyPopop() {

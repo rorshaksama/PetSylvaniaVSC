@@ -24,11 +24,23 @@ export class VoirAdoptionComponent implements OnInit {
   dropdownSettings = {};
   dropdownType = [];
   selectedType = [];
+  u;
+  connecte = false;
+  // tslint:disable-next-line: max-line-length
+  constructor(private http: HttpClient, private route: Router, public myService: MyserviceService, private dialog: MatDialog) {
+    
+  }
 
+  HSConnecte() {
+    this.u = this.myService.recupUserConnectLocalStorage();
+    console.log('utilisateur ', this.u);
 
-  constructor(private http: HttpClient, private route: Router, public myService: MyserviceService, private dialog: MatDialog) { }
+  }
 
   ngOnInit() {
+
+
+    this.u = this.myService.recupUserLocalStorage();
     this.http.get(this.myService.lienHttp + 'adoption').subscribe(ad => {
       this.adoptions = ad;
 
