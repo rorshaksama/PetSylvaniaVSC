@@ -19,10 +19,12 @@ export class PopupComponent implements OnInit {
   add: Adoption = new Adoption();
 
   // tslint:disable-next-line: max-line-length
-  constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupComponent>) { }
+  constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupComponent>) { 
+    this.u = this.myservice.recupUserConnectLocalStorage();
+  }
 
   ngOnInit() {
-
+console.log(this.u);
   }
 
   addAdoption() {
