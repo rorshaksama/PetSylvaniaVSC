@@ -21,7 +21,7 @@ align-content: center;
 margin-top: auto;
 margin-bottom: auto;
 
-background-color: rgba(141, 218, 221, 0.4) !important;
+background-color:white !important;
 }
 
 .social_icon span{
@@ -112,7 +112,7 @@ margin-left: 4px;
     color: white
 }
 .titre{
-    color: rgb(123, 163, 173);
+    color: rgb(123, 163, 173) !important;
     letter-spacing: 3px;
     font-size: 35px;
  }

@@ -18,8 +18,11 @@ export class PopupgardeComponent implements OnInit {
   a: Animal = new Animal();
   ga: Garde = new Garde();
   // tslint:disable-next-line: max-line-length
-  constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupgardeComponent>) { }
+  constructor(private http: HttpClient, public myservice: MyserviceService, private route: Router, private dialog: MatDialog, public dialogRef: MatDialogRef<PopupgardeComponent>) {
+ 
+   }
 
+  
   ngOnInit() {
     this.u = this.myservice.recupUserConnectLocalStorage();
   }
