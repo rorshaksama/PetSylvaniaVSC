@@ -40,6 +40,7 @@ export class ProfileComponent implements OnInit {
 
   animal;
 
+
   constructor(private http: HttpClient, private route: Router, private myservice: MyserviceService) {
     this.u = this.myservice.recupUserConnectLocalStorage();
 
@@ -69,8 +70,8 @@ export class ProfileComponent implements OnInit {
       this.myName = false;
     }
   }
-  changeNom(name) {
-    this.Cname = name;
+  changeNom() {
+    // this.Cname = name;
     this.myName = false;
     this.myPName = false;
 
@@ -85,8 +86,8 @@ export class ProfileComponent implements OnInit {
       this.myPrenom = false;
     }
   }
-  changePrenom(prenom) {
-    this.Cprenom = prenom;
+  changePrenom() {
+    // this.Cprenom = prenom;
     this.myPrenom = false;
     this.myPPrenom = false;
 
@@ -101,8 +102,8 @@ export class ProfileComponent implements OnInit {
       this.myMail = false;
     }
   }
-  changeMail(mail) {
-    this.Cmail = mail;
+  changeMail() {
+    // this.Cmail = mail;
     this.myMail = false;
     this.myPMail = false;
     this.mailBool = true;
@@ -116,8 +117,8 @@ export class ProfileComponent implements OnInit {
       this.myLogin = false;
     }
   }
-  changeLogin(login) {
-    this.Clogin = login;
+  changeLogin() {
+    // this.Clogin = login;
     this.myLogin = false;
     this.myPLogin = false;
 
@@ -151,8 +152,10 @@ export class ProfileComponent implements OnInit {
 
 
 
-    this.http.put(this.myservice.lienHttp + this.u.id, user).subscribe(data => {
+    this.http.put(this.myservice.lienHttp + 'user/' + this.u.id, this.u).subscribe(data => {
       this.ngOnInit();
+    }, err => {
+      console.log(err);
     });
   }
 

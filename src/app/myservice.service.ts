@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from './model/User';
 import { Router } from '@angular/router';
 import { Animal } from './model/Animal';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -13,12 +14,12 @@ export class MyserviceService {
   // lienHttp = 'http://51.254.112.59:8080/petsylvanie2/';
   connect = false;
   mConnecte = true;
-
+  alertes;
   myAnimalFaireGarder;
 
   msgIfNotConnect;
 
-  constructor(private route: Router) { }
+  constructor(private route: Router, private http: HttpClient) { }
 
   recupUserLocalStorage() {
     const u: User = JSON.parse(localStorage.getItem('UserConnectStorage'));
@@ -53,4 +54,5 @@ export class MyserviceService {
     console.log('mConnecte:   ' + this.mConnecte);
     this.route.navigate(['bienvenue']);
   }
+
 }
