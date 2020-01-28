@@ -1,9 +1,9 @@
 <br>
 <div class="scroll ">
-    <div class=" example-button-row">
-        <h3 style=" text-align: center;">Alertes en cours
+    <div class=" example-button-row cardborder">
+        <h3 style=" text-align: center;" class="perso">Alertes en cours
 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
             <button mat-fab class="decoButton" (click)="addAlerte()">
                 <mat-icon>library_add</mat-icon>
             </button>
@@ -21,7 +21,7 @@
             <div class="card ombreCarde">
                 <div class="card-header">
                     <p class="pmsg">{{a.user.login}} a perdu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button mat-icon-button color="accent" (click)="deleteAlerte(a.id)" *ngIf="voirB(a) ">
+                        <button mat-icon-button color="accent" class="nutton" (click)="deleteAlerte(a.id)" *ngIf="voirB(a) ">
                             <mat-icon>delete</mat-icon>
                         </button></p>
                     <div class="card-body">
@@ -58,7 +58,7 @@
                         <br>
                         <div class="card">
                             <div class="card-header">
-                                     <button class="btn btn-link btn-block" (click)= "VoirReponse(a)">voir les réponse</button>
+                                     <button class="btn btn-link btn-block" (click)= "VoirReponse(a)">voir les réponses</button>
                             </div>
                             <div class="card-body">
                                 <div *ngIf = "resVisible">

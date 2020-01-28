@@ -1,6 +1,7 @@
 .perso{
     margin-left: 50px;
-    text-shadow: 5px 5px 5px rgb(255, 130, 130);
+   font-size: 30px;
+    color:rgb(202, 94, 94);
 }
 
 
@@ -25,7 +26,7 @@
 }
 
 .myHr{
-    border: 10px solid #36C;
+    border: 10px solid rgba(204, 70, 47, 0.925);
   border-radius: 5px;
 }
 
@@ -39,9 +40,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .decoButton{
 
    border-style: solid;
-    border-color:  rgba(245, 55, 55, 0.712);
-    color: rgba(245, 55, 55, 0.712);
+    border-color:  rgba(204, 70, 47, 0.925);
+    color: rgba(204, 70, 47, 0.925);
     background-color: white;
+    margin-right: 10px;
+}
+.nutton{
+
+    border-color:  rgba(204, 70, 47, 0.925);
+    color: rgba(204, 70, 47, 0.925);
+    margin-left: 120px;
 }
     
 .scroll{
@@ -65,13 +73,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     transition: 0.3s;
   }
 
-  .p1{
-        
-  }
-
-  .p2{
-      
-  }
 
 
   
