@@ -1,273 +1,80 @@
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <div id="accordeon">
-                    <h3>Comment mettre un chat dans une cage ?</h3>
-                    <div>
-                        <p>Mettre un chat dans une caisse ou un sac de transport peut être un vrai challenge ! Le plus
-                            simple est d’habituer les chats dès leur plus jeune âge à la cage de transport pour pouvoir
-                            les
-                            transporter facilement lors d’une visite chez le vétérinaire ou pour un voyage… Si cela
-                            n’est
-                            pas possible, il existe des petites astuces pour les placer plus facilement au sein de
-                            celle-ci.
-                            Comment habituer à un chat une cage ?
-                            Pour pouvoir mettre facilement un chat au sein d’une cage, l’idéal est de l’habituer dès le
-                            plus
-                            jeune âge. Il est possible d’habituer un chat adulte à dormir au sein d’une caisse mais cela
-                            sera probablement plus long que pour un chaton.
+<mat-accordion>
+       <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="titre1">
+            Chat
+        </mat-panel-title>
+        <mat-panel-description>
+            Comment mettre un chat dans une cage ?
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p> Comment habituer à un chat une cage ?
+        Pour pouvoir mettre facilement un chat au sein d’une cage, l’idéal est de l’habituer dès le plus jeune âge. Il est possible d’habituer un chat adulte à dormir au sein d’une caisse mais cela sera probablement plus long que pour un chaton.
+        
+        Vous pouvez installer la cage de transport ouverte dans le salon par exemple (dans un premier temps il est conseillé d’enlever le couvercle de la cage). Placez au sein de la cage des couvertures et essayez d’attirer votre chat avec des jouets, des friandises, etc… Si votre chat s’installe dedans, félicitez-le et récompensez-le bien. L’objectif est qu’il associe la cage de transport à quelque chose de positif.
+        
+        Il est possible d’ajouter une étape supplémentaire en installant les couvertures dans le salon et en les plaçant ensuite dans la caisse de transport ouverte puis fermée.
+        
+        Pendant toute cette période d’habituation, vous pouvez donner à votre chat un complément alimentaire antistress. Vous pouvez pulvériser au sein de la caisse de transport un spray apaisant pour les chats (à base de phéromones ou d’huiles essentielles apaisantes) afin que votre chat se sente bien et qu’il s’y rende plus facilement.
+        
+        Cette habituation à la cage de transport peut prendre quelques semaines à quelques mois et pendant ce temps, il faut éviter de forcer votre chat à rentrer de force dans sa cage.
+        
+        Si votre chat prend l’habitude de se coucher dans sa cage, il sera facile de le placer dedans lorsque vous devrez partir en voyage ou lors d’une visite chez le vétérinaire. Vous pourrez simplement l’appeler en lui proposant un peu de nourriture au sein de celle-ci, il rentrera sans doute tout seul à l’intérieur.
+        </p>
+    </mat-expansion-panel>
 
-                            Vous pouvez installer la cage de transport ouverte dans le salon par exemple (dans un
-                            premier
-                            temps il est conseillé d’enlever le couvercle de la cage). Placez au sein de la cage des
-                            couvertures et essayez d’attirer votre chat avec des jouets, des friandises, etc… Si votre
-                            chat
-                            s’installe dedans, félicitez-le et récompensez-le bien. L’objectif est qu’il associe la cage
-                            de
-                            transport à quelque chose de positif.
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title class="titre1">
+  Chien
+</mat-panel-title>
+<mat-panel-description>
+    Combien coûte annuellement un chien ?
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p> 
+    Les frais vétérinaires
 
-                            Il est possible d’ajouter une étape supplémentaire en installant les couvertures dans le
-                            salon
-                            et en les plaçant ensuite dans la caisse de transport ouverte puis fermée.
+    La plupart des animaux vendus ou cédés (par les SPA ou associations) sont normalement déjà identifiés par puçage électronique, il faudra l’envisager pour les animaux trouvés ou donnés par la famille ou les amis ; il en coutera environ 65/70 €.
+    
+    Même si les premiers vaccins et vermifugations ont déjà été faits, une visite vétérinaire d’achat s’impose néanmoins, pour vérifier si les vaccins sont à jour, si l’animal est correctement vermifugé et déparasité, et s’il ne présente pas de pathologie sous-jacente (troubles digestifs, atteinte respiratoire, vérification des oreilles, des yeux, etc...). Sans compter les conseils que pourra vous prodiguer le vétérinaire quant à l’alimentation, l’hygiène, l’éducation, etc... Une consultation vétérinaire reviendra en moyenne à 30/40 €, mais il faudra peut-être rajouter un rappel de vaccin  (environ 60 €) si toutes les injections de primovaccination n’ont pas encore été faites, ainsi que les antiparasitaires (internes / externes) si besoin.
+    
+    Dernier point à aborder concernant les soins vétérinaires la première année : l’éventuelle castration de l’animal. Pour un chat mâle, prévoir 80 à 100 €, pour une chatte 130 à 140 €. Si vous voulez faire stériliser votre chien, il vous en coûtera 140 à 170 € (selon le poids), pour votre chienne 220 à 300 € (selon le poids).
+    
+     
+    
+    Le matériel
+    
+    Pour un chien, il faut envisager l’achat d’un lieu de couchage (panier, coussin), de gamelles, d’un ou plusieurs harnais et d’une laisse, de jouets divers et variés... ce qui peut vite faire monter la facture...
+    
+    Pour un chat, une cage de transport sera indispensable pour les voyages ou les déplacements chez le vétérinaire (en moyenne 30 €), mais aussi parfois un harnais et une laisse. Pour l’occuper, des jouets, un arbre à chat, un griffoir pourront s’avérer nécessaires, sauf si votre animal peut sortir et grimper sur de vrais arbres... Selon les marques, les prix sont variables et peuvent vite augmenter les frais... Parfois, l’installation d’une chatière vous évitera de fastidieux allers/retours pour ouvrir à Minou à toute heure du jour et de la nuit (de 15 jusqu’à 150 € pour une chatière connectée qui ne laisse passer que votre chat muni de son badge électronique)
+    
+    Il ne faudra pas oublier les gamelles et, pour un chat qui ne sort pas, un (ou deux) bac à litière (de 5 à 50 € pour une maison de toilette) et la litière à changer très régulièrement (en moyenne 150 € par an !)
+    
+    Selon le pelage de l’animal, peigne(s) et brosse(s) seront peut-être nécessaires pour l’entretien régulier (de 3 à 30 € en moyenne).
+    
 
-                            Pendant toute cette période d’habituation, vous pouvez donner à votre chat un complément
-                            alimentaire antistress. Vous pouvez pulvériser au sein de la caisse de transport un spray
-                            apaisant pour les chats (à base de phéromones ou d’huiles essentielles apaisantes) afin que
-                            votre chat se sente bien et qu’il s’y rende plus facilement.
+</p>
+</mat-expansion-panel>
 
-                            Cette habituation à la cage de transport peut prendre quelques semaines à quelques mois et
-                            pendant ce temps, il faut éviter de forcer votre chat à rentrer de force dans sa cage.
-
-                            Si votre chat prend l’habitude de se coucher dans sa cage, il sera facile de le placer
-                            dedans
-                            lorsque vous devrez partir en voyage ou lors d’une visite chez le vétérinaire. Vous pourrez
-                            simplement l’appeler en lui proposant un peu de nourriture au sein de celle-ci, il rentrera
-                            sans
-                            doute tout seul à l’intérieur.</p>
-                    </div>
-                    <h3>Combien coûte annuellement un chien ?</h3>
-                    <div>
-                        <p>De nombreux foyers en France possèdent un animal de compagnie, et si l’on s’en tient aux «
-                            classiques », on dénombre ainsi près de 13,5 millions de chats et 7,3 millions de chiens
-                            (d’après une étude de 2018). Ces compagnons, s’ils contribuent notamment au bien-être de
-                            leur
-                            propriétaire, représentent toutefois un coût annuel non négligeable, dont il faut tenir
-                            compte
-                            lorsqu’on envisage d’adopter un chien.
-                            L’achat/l’adoption
-
-                            Selon la race de l’animal choisi, le lieu où on va le chercher (élevage, animalerie, SPA,
-                            particulier...), les prix peuvent aller de 0€ (animal trouvé, ce qui est encore assez
-                            fréquent
-                            pour un chat) à plusieurs centaines d’euros, voire plus !
-
-
-
-                            Les frais vétérinaires
-
-                            La plupart des animaux vendus ou cédés (par les SPA ou associations) sont normalement déjà
-                            identifiés par puçage électronique, il faudra l’envisager pour les animaux trouvés ou donnés
-                            par
-                            la famille ou les amis ; il en coutera environ 65/70 €.
-
-                            Même si les premiers vaccins et vermifugations ont déjà été faits, une visite vétérinaire
-                            d’achat s’impose néanmoins, pour vérifier si les vaccins sont à jour, si l’animal est
-                            correctement vermifugé et déparasité, et s’il ne présente pas de pathologie sous-jacente
-                            (troubles digestifs, atteinte respiratoire, vérification des oreilles, des yeux, etc...).
-                            Sans
-                            compter les conseils que pourra vous prodiguer le vétérinaire quant à l’alimentation,
-                            l’hygiène,
-                            l’éducation, etc... Une consultation vétérinaire reviendra en moyenne à 30/40 €, mais il
-                            faudra
-                            peut-être rajouter un rappel de vaccin (environ 60 €) si toutes les injections de
-                            primovaccination n’ont pas encore été faites, ainsi que les antiparasitaires (internes /
-                            externes) si besoin.
-
-                            Dernier point à aborder concernant les soins vétérinaires la première année : l’éventuelle
-                            castration de l’animal. Pour un chat mâle, prévoir 80 à 100 €, pour une chatte 130 à 140 €.
-                            Si
-                            vous voulez faire stériliser votre chien, il vous en coûtera 140 à 170 € (selon le poids),
-                            pour
-                            votre chienne 220 à 300 € (selon le poids).
-
-
-
-                            Le matériel
-
-                            Pour un chien, il faut envisager l’achat d’un lieu de couchage (panier, coussin), de
-                            gamelles,
-                            d’un ou plusieurs harnais et d’une laisse, de jouets divers et variés... ce qui peut vite
-                            faire
-                            monter la facture...
-
-                            Pour un chat, une cage de transport sera indispensable pour les voyages ou les déplacements
-                            chez
-                            le vétérinaire (en moyenne 30 €), mais aussi parfois un harnais et une laisse. Pour
-                            l’occuper,
-                            des jouets, un arbre à chat, un griffoir pourront s’avérer nécessaires, sauf si votre animal
-                            peut sortir et grimper sur de vrais arbres... Selon les marques, les prix sont variables et
-                            peuvent vite augmenter les frais... Parfois, l’installation d’une chatière vous évitera de
-                            fastidieux allers/retours pour ouvrir à Minou à toute heure du jour et de la nuit (de 15
-                            jusqu’à
-                            150 € pour une chatière connectée qui ne laisse passer que votre chat muni de son badge
-                            électronique)
-
-                            Il ne faudra pas oublier les gamelles et, pour un chat qui ne sort pas, un (ou deux) bac à
-                            litière (de 5 à 50 € pour une maison de toilette) et la litière à changer très régulièrement
-                            (en
-                            moyenne 150 € par an !)
-
-                            Selon le pelage de l’animal, peigne(s) et brosse(s) seront peut-être nécessaires pour
-                            l’entretien régulier (de 3 à 30 € en moyenne).
-                    </div>
-                    <h3>Ou adopter un lapin ?</h3>
-                    <div>
-                        <p>Les animaleries : Si vous êtes débutant, vous avez sûrement l'idée de l'animalerie en tête.
-                            C'est
-                            une des pires options que l'on peut choisir, vous en saurez plus dans l'article
-                            "Animalerie".
-
-                            Refuges et SPA : qui sont le meilleur lieu d'adoption. Sauver un lapin abandonné est un
-                            choix
-                            responsable. Et même si vous ne connaissez pas ce qu'il a vécu dans sa vie passée, il ne
-                            sera
-                            pas plus agressif ou craintif qu'un autre lapin : n'importe quel lapin a besoin de beaucoup
-                            d'attention et de soins pour s'habituer à son nouveau foyer. En plus d'aider le refuge à
-                            poursuivre son activité, il vous sera beaucoup plus facile d'éduquer un lapin adulte : la
-                            période d'adolescence passée, le lapin sera plus calme, propre plus facilement et souvent
-                            déjà
-                            stérilisé. Ces lapins deviennent souvent même plus attachés à leur ami humain. Tout le monde
-                            est
-                            gagnant !
-                            N'hésitez pas à appeler tous les refuges de votre département pour savoir s'ils ont des
-                            lapins.
-                            Certains les gardent aussi dans des familles d'accueil et organisent parfois des
-                            covoiturages,
-                            n'hésitez pas à vous renseigner. Après s'être assuré que votre démarche est sérieuse,
-                            l'association demandera certainement des frais d'adoptions peu importants (nécessaires pour
-                            stériliser et soigner les lapins), de signer un contrat d'adoption qui représente votre
-                            engagement à assumer totalement votre nouveau compagnon, elle pourra aussi faire des visites
-                            de
-                            contrôle par la suite et demander des nouvelles.</p>
-                    </div>
-                    <h3>Comment vit le rongeur ?</h3>
-                    <div>
-                        <p>La vie du hamster au quotidien
-                            Le hamster est plutôt solitaire, nocturne. Si la température diminue en dessous de 8°, il
-                            entre
-                            en pseudo hibernation : il dort plus longtemps et profondément. Sa température corporelle
-                            chute
-                            et le hamster devient “froid” (il stabilise sa température 1°C au dessus de la température
-                            ambiante). Sa fréquence et son rythme cardiaque sont ralentis. Toutes ses fonctions vitales
-                            sont
-                            réduites au minimum (il ne se lève qu’une à deux fois par semaine pour manger, boire et
-                            faire
-                            ses besoins). Il ne faut jamais toucher ou réveiller un hamster en hibernation.
-
-                            C'est un animal qui prend peu de place et nécessite peu d'entretien ; pour ces raisons, il
-                            est
-                            possible de le laisser seul pendant une semaine de vos vacances. La nuit, il est en pleine
-                            activité, acrobate et rongeurs de barreaux. Le jour, il ne faut pas le réveiller : vous
-                            risqueriez de le rendre agressif et de diminuer son espérance de vie.
-                            Il est possible de le laisser en liberté une trentaine de minutes par jour en dehors de sa
-                            cage.
-                            Il faut veiller à ce qu’il ne se perde pas et qu’il ne fasse pas de trou, son activité
-                            favorite.
-                            On utilise par exemple une sphère d'exercice ou un petit parc aménagé.
-                            La coupe des griffes n'est pas nécessaire chez le hamster.
-                            Il est déconseillé de lui donner un bain, ce pourrait être une expérience traumatisante.
-                            Certains hamsters aiment se laver dans du sable comme le chinchilla. Si le pelage est sale,
-                            il
-                            est possible de le brosser avec une brosse à dents humidifiée. Les races à poils longs,
-                            comme
-                            l'angora, doivent être régulièrement brossées, en fonction du tempérament du hamster
-                            également.
-
-                            Une bonne alimentation
-                            Le hamster est omnivore et consomme un mélange pour hamster, des fruits, des céréales, des
-                            laitages et même de la viande. La coprophagie (consommation de petites crottes à la sortie
-                            de
-                            l’anus) est normale dans cette espèce.
-
-                            Tous les jours : on apporte de l'eau à température ambiante, dans un biberon ou dans une
-                            petite
-                            gamelle. Le hamster boit souvent mais en faible quantité. On change l'eau au moins tous les
-                            deux
-                            à trois jours. Il aime ronger une pierre de sels minéraux.
-                            Le hamster mange des granulés ou des graines adaptés à cette espèce à raison de 10 à 15 g
-                            par
-                            jour (une cuillère à soupe). Des légumes frais, mais à température ambiante, font partie du
-                            régime alimentaire du hamster : tranche de concombre, tranche de pommes, morceau de
-                            carottes,
-                            feuille de salade, grain de raisin, une tranche de fraise... Le hamster est un omnivore, il
-                            peut
-                            manger également un ou deux vers de farine par jour. Cet apport en protéines peut être
-                            remplacé
-                            par une croquette pour chaton. On lui propose également quelques brins de foin ou de petites
-                            tranches de pain rassis.
-                            Une à 2 fois par semaine : on peut donner au hamster, sur le bout du doigt, une lichette de
-                            fromage ou de yaourt, une lichette de jambon, de boeuf ou de thon. Il aime également un épi
-                            de
-                            blé qu'il rongera.
-                            On ne lui donne pas d'épluchures de pommes de terre, de choux, de l'oignon, des haricots
-                            crus,
-                            des sucreries ou du chocolat.</p>
-                    </div>
-                    <h3>Le picage chez le perroquet</h3>
-                    <div>
-                        <p>Le picage est un trouble comportemental obsessionnel et destructeur, fréquent chez les
-                            oiseaux
-                            maintenus en captivité, qui consiste en une mutilation des plumes. On parle d’autopicage
-                            lorsque
-                            l’oiseau mutile ses propres plumes et d’allopicage lorsqu’il mutile les plumes de ses
-                            congénères. Les perroquets y sont particulièrement sujets. Inutile d’espérer une
-                            amélioration
-                            spontanée : le phénomène a au contraire tendance à s’aggraver si aucune mesure thérapeutique
-                            ou
-                            comportementale n’est mise en place.
-
-                            Comment se manifeste le picage ?
-                            Le picage est un comportement excessif de l’entretien normal des plumes (appelé « lissage
-                            »). Au
-                            lieu de lisser soigneusement leurs plumes, les oiseaux les mâchonnent et tirent dessus
-                            jusqu’à
-                            les casser, voire les arracher, la peau pouvant ainsi être mise à nu sur une grande partie
-                            du
-                            corps. Le picage peut être permanent ou épisodique ; certains perroquets laissent patiemment
-                            repousser leurs plumes et arrachent tout en quelques heures.
-
-                            Une fois que cette mauvaise habitude est prise, cela devient une manie et le perroquet peut
-                            continuer pendant des années.
-
-                            Le picage s’accompagne souvent de lésions de la peau, les traumatismes répétés étant à
-                            l’origine
-                            d’infections qui empêchent la cicatrisation des zones concernées.
-
-                            Le picage est fréquemment associé à :
-
-                            d’autres troubles du comportement, comme les stéréotypies (mouvements répétitifs répétés
-                            inlassablement), les comportements sexuels destinés au propriétaire (parade nuptiale et/ou
-                            régurgitation de nourriture par exemple) ou l’agressivité.
-                            d’autres lésions d’automutilation : morsures des pattes, cognement de la tête contre les
-                            barreaux de la cage.
-                            Le picage apparaît généralement au moment de la puberté (2-3 ans chez les perroquets de
-                            taille
-                            moyenne, 3-4 ans chez les grands, 5-6 ans chez les très grands).
-
-                            Si plusieurs perroquets vivent ensemble, il est parfois difficile de différencier les
-                            lésions
-                            auto-infligées de celles causées par un compagnon de cage. Dans ce dernier cas, la face et
-                            la
-                            tête sont des lieux « d’attaque » privilégiés et la séparation des belligérants suffit
-                            généralement à régler le problème ! S’il s’agit de lésions auto-infligées, logiquement, les
-                            plumes ne sont pas arrachées sur la tête, que le perroquet ne peut pas atteindre avec son
-                            bec.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title class="titre1">
+    Lapin
+</mat-panel-title>
+<mat-panel-description>
+    Où adopter ?
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p> 
+    Les animaleries : Si vous êtes débutant, vous avez sûrement l'idée de l'animalerie en tête. C'est une des pires options que l'on peut choisir, vous en saurez plus dans l'article "Animalerie".
+ 
+    Refuges et SPA : qui sont le meilleur lieu d'adoption. Sauver un lapin abandonné est un choix responsable. Et même si vous ne connaissez pas ce qu'il a vécu dans sa vie passée, il ne sera pas plus agressif ou craintif qu'un autre lapin : n'importe quel lapin a besoin de beaucoup d'attention et de soins pour s'habituer à son nouveau foyer. En plus d'aider le refuge à poursuivre son activité, il vous sera beaucoup plus facile d'éduquer un lapin adulte : la période d'adolescence passée, le lapin sera plus calme, propre plus facilement et souvent déjà stérilisé. Ces lapins deviennent souvent même plus attachés à leur ami humain. Tout le monde est gagnant !
+    N'hésitez pas à appeler tous les refuges de votre département pour savoir s'ils ont des lapins. Certains les gardent aussi dans des familles d'accueil et organisent parfois des covoiturages, n'hésitez pas à vous renseigner. Après s'être assuré que votre démarche est sérieuse, l'association demandera certainement des frais d'adoptions peu importants (nécessaires pour stériliser et soigner les lapins), de signer un contrat d'adoption qui représente votre engagement à assumer totalement votre nouveau compagnon, elle pourra aussi faire des visites de contrôle par la suite et demander des nouvelles.
+    
+</p>
+</mat-expansion-panel>
+</mat-accordion>

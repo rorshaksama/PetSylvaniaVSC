@@ -38,6 +38,12 @@ import {MatListModule} from '@angular/material/list';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { PopupAnimalComponent } from './popup-animal/popup-animal.component';
 import { FichesComponent } from './fiches/fiches.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +88,7 @@ import { FichesComponent } from './fiches/fiches.component';
     MatSelectModule,
     MatListModule,
     FlexLayoutModule,
+    MatExpansionModule
 
   ],
   bootstrap: [AppComponent]
