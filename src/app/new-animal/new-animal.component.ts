@@ -19,6 +19,34 @@ export class NewAnimalComponent implements OnInit {
   t: Type = new Type();
   animal;
 
+  infoConnexion;
+
+  myName = false;
+  myPName = true;
+
+  myPrenom = false;
+  myPPrenom = true;
+
+  myMail = false;
+  myPMail = true;
+
+  myNaissance = false;
+  myPNaissance = true;
+
+  Cname;
+  Cprenom;
+  Cmail;
+  Clogin;
+
+  pers;
+
+  nomBool = false;
+  prenomBool = false;
+  mailBool = false;
+  loginBool = false;
+
+  
+
   constructor(private http: HttpClient, private myService: MyserviceService, private dialog: MatDialog) {
     this.u = this.myService.recupUserConnectLocalStorage();
 
@@ -28,7 +56,7 @@ export class NewAnimalComponent implements OnInit {
     });
   }
   ngOnInit() {
-
+console.log(this.a);
   }
 
   createAnimal() {
@@ -37,7 +65,7 @@ export class NewAnimalComponent implements OnInit {
 
 
     this.http.post(this.myService.lienHttp + 'animal', this.a).subscribe(data => {
-
+      console.log(this.a);
     });
   }
   callNewAnimal() {
