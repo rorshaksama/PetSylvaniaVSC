@@ -37,3 +37,12 @@
 .margin{
     margin-left: 6%;
 }
+
+.buttonStyle2{
+  
+    border-style: solid;
+    border-color: rgb(100, 132, 139);
+    color: white;
+    background-color: rgba(100, 132, 139, 0.767);
+
+  }

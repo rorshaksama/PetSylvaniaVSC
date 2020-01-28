@@ -51,7 +51,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: rgba(204, 70, 47, 0.925);
     margin-left: 120px;
 }
-    
+
+.nutton1{
+
+    border-color:  rgba(204, 70, 47, 0.925);
+    color: rgba(204, 70, 47, 0.925);
+}
 .scroll{
     max-height: calc(100vh - 210px);
     overflow-y: scroll;
@@ -74,5 +79,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
 
-
+.p1{
+    text-align: center;
+}
   
