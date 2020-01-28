@@ -3,32 +3,30 @@
     <div class=" example-button-row cardborder">
         <h3 style=" text-align: center;" class="perso">Alertes en cours
 
-                &nbsp;
+            &nbsp;
             <button mat-fab class="decoButton" (click)="addAlerte()">
                 <mat-icon>library_add</mat-icon>
             </button>
 
         </h3>
     </div>
-
-
-
-    <div>
+  <div>
 
 
 
         <div *ngFor="let a of alertes">
             <div class="card ombreCarde">
                 <div class="card-header">
-                    <p class="pmsg">{{a.user.login}} a perdu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button mat-icon-button color="accent" class="nutton" (click)="deleteAlerte(a.id)" *ngIf="voirB(a) ">
+                    <p class="pmsg ">{{a.user.login}} a perdu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button mat-icon-button color="accent" class="nutton" (click)="deleteAlerte(a.id)"
+                            *ngIf="voirB(a) ">
                             <mat-icon>delete</mat-icon>
                         </button></p>
                     <div class="card-body">
                         {{a.message}}
 
                         <br>
-                        <h5>disparu le {{a.dateDisparition}}</h5>
+                        <h5 p1>disparu le {{a.dateDisparition}}</h5>
 
                         <br>
                         <p></p>
@@ -46,8 +44,8 @@
 
                             <div class="col-sm-2">
                                 <br><br>
-                                <div class="example-button-row" class="d-flex justify-content-center">
-                                    <button mat-icon-button color="accent"
+                                <div class="example-button-row" class="d-flex justify-content-center nutton1">
+                                    <button mat-icon-button color="red"
                                         (click)="reponseAlerte(a, recup1.value, recup2.value)">
                                         <mat-icon>send</mat-icon>
                                     </button>
@@ -58,12 +56,14 @@
                         <br>
                         <div class="card">
                             <div class="card-header">
-                                     <button class="btn btn-link btn-block" (click)= "VoirReponse(a)">voir les réponses</button>
+                                <button class="btn btn-link btn-block" (click)="VoirReponse(a)">voir les
+                                    réponses</button>
                             </div>
                             <div class="card-body">
-                                <div *ngIf = "resVisible">
-                                    <div *ngFor = "let m of messages">
-                                        {{ m.contenu }} <hr>
+                                <div *ngIf="resVisible">
+                                    <div *ngFor="let m of messages">
+                                        {{ m.contenu }}
+                                        <hr>
                                     </div>
                                 </div>
                             </div>

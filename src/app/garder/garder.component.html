@@ -1,4 +1,3 @@
-
 <br>
 <div class="StyleBar">
   <ng-multiselect-dropdown [placeholder]="'Type'" [data]="dropdownType" [(ngModel)]="selectedType"
@@ -10,24 +9,26 @@
 <br>
 <br>
 <div class='row'>
-    <div class="col-sm-3 margin" *ngFor="let ga of garde ">
-      <div class="mydiv ">
-  
-        <mat-card class="example-card text-center card "*ngIf="test(ga)" >
-          <mat-card-header back-ground='white'>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ga.animal.type.type}} {{ga.animal.nom}}</mat-card-title>
-            <mat-card-subtitle> {{ga.userProprio.nom}} </mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              {{ga.contenu}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button type="submit" text-center class="buttonStyle">Je suis disponible pour garder {{ga.animal.nom}} </button>
-          </mat-card-actions>
-        </mat-card>
+  <div class="col-sm-3 margin" *ngFor="let ga of garde ">
+    <div class="mydiv ">
 
+      <mat-card class="example-card text-center card " *ngIf="test(ga)">
+        <mat-card-header back-ground='white'>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ga.animal.type.type}} {{ga.animal.nom}}</mat-card-title>
+          <mat-card-subtitle> {{ga.userProprio.nom}} </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{ga.contenu}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button type="submit" text-center class="buttonStyle2"> Garder {{ga.animal.nom}} </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
 
+  </div>
+</div>
