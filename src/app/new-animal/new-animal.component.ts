@@ -4,6 +4,8 @@ import { MyserviceService } from '../myservice.service';
 import { Animal } from '../model/Animal';
 import { User } from '../model/User';
 import { Type } from '../model/Type';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupAnimalComponent } from '../popup-animal/popup-animal.component';
 
 @Component({
   selector: 'app-new-animal',
@@ -17,7 +19,7 @@ export class NewAnimalComponent implements OnInit {
   t: Type = new Type();
   animal;
 
-  constructor(private http: HttpClient, private myService: MyserviceService) {
+  constructor(private http: HttpClient, private myService: MyserviceService, private dialog: MatDialog) {
     this.u = this.myService.recupUserConnectLocalStorage();
 
     this.http.get(this.myService.lienHttp + 'animal/user/' + this.u.id).subscribe(a => {
@@ -38,6 +40,8 @@ export class NewAnimalComponent implements OnInit {
 
     });
   }
-
+  callNewAnimal() {
+    const mydial = this.dialog.open(PopupAnimalComponent);
+  }
 
 }
