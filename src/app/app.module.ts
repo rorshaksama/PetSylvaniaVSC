@@ -37,6 +37,7 @@ import { NewAnimalComponent } from './new-animal/new-animal.component';
 import {MatListModule} from '@angular/material/list';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { PopupAnimalComponent } from './popup-animal/popup-animal.component';
+import { FichesComponent } from './fiches/fiches.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { PopupAnimalComponent } from './popup-animal/popup-animal.component';
     HistogardeComponent,
     VetoComponent,
     NewAnimalComponent,
-    PopupAnimalComponent
+    PopupAnimalComponent,
+    FichesComponent
   ],
   // tslint:disable-next-line: max-line-length
   entryComponents: [PopupComponent, FormulaireAlerteComponent, AlerteComponent, ConnexionComponent, InscriptionComponent,

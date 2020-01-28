@@ -5,3 +5,38 @@
     text-align: center;
 }
 
+.card2{
+    display: block;
+    margin : auto;
+
+
+width:28%
+
+}
+
+.box{
+
+    text-align: center;
+}
+
+.lit {
+     color: rgb(82, 106, 112);
+    letter-spacing: 3px;
+    font-size: 15px;
+    list-style-image : url(/assets/patte2.gif);
+    text-align: justify;
+
+  }
+
+  
+.titre2{
+    color: rgb(82, 106, 112);
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+
+.dv{
+    margin-left: 30%;
+    margin-right: 30%;
+
+  }
