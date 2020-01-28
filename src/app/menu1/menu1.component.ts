@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AlerteComponent } from '../alerte/alerte.component';
 import { ConnexionComponent } from '../connexion/connexion.component';
+import { MyserviceService } from '../myservice.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-menu1',
   templateUrl: './menu1.component.html',
@@ -9,7 +11,13 @@ import { ConnexionComponent } from '../connexion/connexion.component';
 })
 export class Menu1Component implements OnInit {
   visible = false;
-  constructor(private dialog: MatDialog) { }
+  u;
+  constructor(private dialog: MatDialog, private myService: MyserviceService, private route: Router) {
+
+  }
+
+
+
 
   ngOnInit() {
   }
@@ -31,6 +39,15 @@ export class Menu1Component implements OnInit {
     mydial.afterClosed().subscribe(result => {
       this.ngOnInit();
     });
+  }
+  connecte() {
+    this.u = this.myService.recupUserConnectLocalStorage();
+    if (this.u === null) {
+      this.myService.msgIfNotConnect = 'Vous devez vous connecter pour accéder à cette page';
+      this.route.navigate(['bienvenue']);
+    }
+
+
   }
 }
 
