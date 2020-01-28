@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HistogardeComponent } from './histogarde/histogarde.component';
 import { VetoComponent } from './veto/veto.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
+import { PopupAnimalComponent } from './popup-animal/popup-animal.component';
 
 
 
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'bienvenue', pathMatch: 'full' },
   { path: 'profile', component: ProfileComponent },
   { path: 'veto', component: VetoComponent },
-  { path: 'nouvelAnimal', component: NewAnimalComponent }
+  { path: 'nouvelAnimal', component: NewAnimalComponent },
+  { path: 'pAnimal', component: PopupAnimalComponent }
 
 ];
 
