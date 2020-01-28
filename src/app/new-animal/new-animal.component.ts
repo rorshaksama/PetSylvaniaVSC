@@ -15,7 +15,7 @@ export class NewAnimalComponent implements OnInit {
   a: Animal = new Animal();
   u: User = new User();
   t: Type = new Type();
-
+  animal;
 
   constructor(private http: HttpClient, private myService: MyserviceService) {
     this.u = this.myService.recupUserConnectLocalStorage();
