@@ -13,6 +13,8 @@
                             placeholder="Nom de l'animal">
                     </div>
                     <hr>
+
+
                     <div> Veuillez choisir le type de votre animal:
                         <select required [(ngModel)]="t.id" name="id">
                             <option value="1">chien</option>
@@ -22,10 +24,14 @@
                             <option value="5">lapin</option>
                         </select>
                     </div>
+
+
+
+
                     <hr>
                     <div>
                         Date de naissance de l'animal: <input type="date" id="daten" name="dateNaissance"
-                            [(ngModel)]="a.dateDeNaissance">
+                            [(ngModel)]="a.dateNaissance">
                     </div>
                     <hr>
                     <div class="input-group form-group">
@@ -110,7 +116,13 @@
     </div>
 </div>
 
+<!-- ***********************************************************************************
+    ****************************************************************************************
+ARRETEZ DE FAIRE DES COPIER COLLER QUI N'ONT PAS SENS, SOURCE DE TROP DE BUG !!!!!!!!
+***************************************************************************************
+**********************************************************************************-->
 
+<!--
 <div class='row'>
     <div class="col-sm-4 margin" *ngFor="let a of animal ">
 
@@ -125,15 +137,15 @@
                     <div style="margin-left: 50px;">
                         <p class="text">Nom :</p>
                         <p *ngIf="myPName">{{a.nom}}
-                            <mat-icon (click)="hideAndShowNom()" style="margin-left: 210px;">create
+                            <mat-icon  style="margin-left: 210px;">create
                             </mat-icon>
                         </p>
                         <p>{{Cname}}</p>
                         <hr>
                     </div>
-                    <div class="col-sm-12" *ngIf="myName">
-                        <input class="form-control" #nom type="text" value="{{ u.nom }}">
-                        <button (click)="changeNom(recup.value)">Valider</button>
+                    <div class="col-sm-12" >
+                        <input class="form-control" #nom type="text">
+                        <button >Valider</button>
                     </div>
                 </div>
                 <div class="input-group form-group">
@@ -169,7 +181,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" (click)="modificationUser(nom.value)" class="btn login_btn centre "
+                    <button type="submit" class="btn login_btn centre "
                         style="margin: auto;">Valider les
                         modifications</button>
                 </div>
@@ -178,4 +190,4 @@
 
     </div>
 
-</div>
+</div> -->

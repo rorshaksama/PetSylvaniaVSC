@@ -28,6 +28,9 @@ export class AlerteComponent implements OnInit {
   utilisateur;
   visible = false;
 
+  resVisible = false;
+
+
   constructor(private route: Router, public myservice: MyserviceService, private http: HttpClient, private dialog: MatDialog) {
     this.utilisateur = this.myservice.recupUserConnectLocalStorage();
   }
@@ -70,7 +73,7 @@ export class AlerteComponent implements OnInit {
     messageSend.userExpediteur = userExp;
     messageSend.userDestinataire = alerte.user;
     //console.log('message send ', messageSend);
-    this.http.post('http://localhost:8099/message', messageSend).subscribe(data => {
+    this.http.post(this.myservice.lienHttp + 'message', messageSend).subscribe(data => {
       //console.log(data);
     }, err => {
       console.log(err);
@@ -108,6 +111,7 @@ export class AlerteComponent implements OnInit {
     }
   }
 
+  nbMessageForAlerte() { }
 
   voirB(alerte) {
     if (this.myservice.mConnecte === false) {
@@ -117,7 +121,13 @@ export class AlerteComponent implements OnInit {
       return false;
     }
   }
-
+  messages;
+  VoirReponse(alerte) {
+    this.resVisible = true;
+    this.http.get(this.myservice.lienHttp + 'message/alerte/' + alerte.id).subscribe(res => {
+      this.messages = res;
+    });
+  }
 
   //  if (this.utilisateur.id === this.alerte.user) {
   //    this.visible = true;

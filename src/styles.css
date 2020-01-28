@@ -58,3 +58,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.pmsg{
+font-size: 16px;
+color: #36C;
+letter-spacing: 3px;
+}
